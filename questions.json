@@ -1,0 +1,102 @@
+[
+  {
+    "question_id": "Q01",
+    "field": "country",
+    "prompt": "Where do you need reporting guidance?",
+    "options": [
+      "IN",
+      "OTHER"
+    ],
+    "design_note": "Select the reporting jurisdiction; do not infer it from a payment currency.",
+    "origin": "project_workflow_design"
+  },
+  {
+    "question_id": "Q02",
+    "field": "suspected_fraud",
+    "prompt": "Do you suspect deception or unauthorised activity?",
+    "options": [
+      "yes",
+      "no",
+      "unknown"
+    ],
+    "design_note": "A suspicion flag, not a finding of fraud.",
+    "origin": "project_workflow_design"
+  },
+  {
+    "question_id": "Q03",
+    "field": "money_moved",
+    "prompt": "Has money actually left your account or possession?",
+    "options": [
+      "yes",
+      "no",
+      "unknown"
+    ],
+    "design_note": "Zero, missing and unknown amounts must not imply payment status.",
+    "origin": "project_workflow_design"
+  },
+  {
+    "question_id": "Q04",
+    "field": "payment_channel",
+    "prompt": "How was the payment made?",
+    "options": [
+      "bank_transfer",
+      "upi",
+      "card",
+      "wallet",
+      "crypto",
+      "gift_card",
+      "cash",
+      "unknown"
+    ],
+    "design_note": "Payment rail is separate from the scam category.",
+    "origin": "project_workflow_design"
+  },
+  {
+    "question_id": "Q05",
+    "field": "credentials_exposed",
+    "prompt": "Were passwords, PINs, OTPs or account access possibly exposed?",
+    "options": [
+      "yes",
+      "no",
+      "unknown"
+    ],
+    "design_note": "Ask only for exposure status, never the secret itself.",
+    "origin": "project_workflow_design"
+  },
+  {
+    "question_id": "Q06",
+    "field": "remote_access",
+    "prompt": "Did someone gain or request remote device access?",
+    "options": [
+      "yes",
+      "no",
+      "unknown"
+    ],
+    "design_note": "Remote access can overlap with any scam family.",
+    "origin": "project_workflow_design"
+  },
+  {
+    "question_id": "Q07",
+    "field": "bank_reported",
+    "prompt": "Have you actually reported it to the bank?",
+    "options": [
+      "yes",
+      "no",
+      "unknown"
+    ],
+    "design_note": "Self-reported completion; no automatic verification.",
+    "origin": "project_workflow_design"
+  },
+  {
+    "question_id": "Q08",
+    "field": "official_reported",
+    "prompt": "Have you actually reported through an official channel?",
+    "options": [
+      "yes",
+      "no",
+      "unknown"
+    ],
+    "design_note": "Do not infer completion from opening a link.",
+    "origin": "project_workflow_design"
+  }
+]

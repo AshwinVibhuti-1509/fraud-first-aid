@@ -1,0 +1,7 @@
+{
+  "answer_combinations_compared": 11664,
+  "selected_action_differences": 0,
+  "response_key_contract_differences": 0,
+  "routing_file_byte_identical": true,
+  "note": "Exhaustive routing equivalence, not validation of medical/legal/financial correctness."
+}

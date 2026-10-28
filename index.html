@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Fraud First Aid Bengaluru · Your next step</title><link rel="stylesheet" href="/static/style.css"><script src="/static/app.js" defer></script><script src="/static/helpline.js" defer></script></head>
+<body>
+<header class="topbar"><a href="/" class="brand"><span class="mark" aria-hidden="true">+</span> Fraud First Aid</a><span class="prototype">BENGALURU · INDIA</span><a class="sos-chip" id="header-1930" href="tel:1930">Call 1930</a></header>
+<main>
+<section class="hero"><div><p class="eyebrow">A LITTLE CLARITY. A NEXT STEP.</p><h1>Something went wrong.<br>Let’s take it one step at a time.</h1><p class="intro">You don’t need to have every answer. Tell us what you know, and we’ll help you organise what to do next.</p></div><div class="hero-note"><span aria-hidden="true">↗</span><p>Your information stays in this session.<br><strong>No sign-up. No AI API. No recovery promises.</strong></p></div></section>
+<aside class="urgent" id="urgent" aria-label="Immediate reporting options"><div><span class="eyebrow">DON’T WAIT FOR THIS FORM</span><h2>Suspect financial cyberfraud in India?</h2><p>Contact your bank through its genuine app or official contact details. You can also use the official reporting channels below.</p></div><div class="urgent-links"><a class="button dark" href="tel:1930">Call 1930 ↗</a><a class="button light" href="https://cybercrime.gov.in" target="_blank" rel="noopener noreferrer">Open reporting portal ↗</a><a class="source-small" href="https://www.pib.gov.in/PressReleasePage.aspx?PRID=2287039&amp;lang=1&amp;reg=1" target="_blank" rel="noopener noreferrer">Official source: Ministry of Home Affairs</a></div></aside>
+
+
+<div class="workspace guided-workspace">
+<section class="panel form-panel" id="form-panel"><div class="section-title"><span class="step">01</span><div><h2>Tell us what happened</h2><p>Step 1 of 2 · “Not sure” is a useful answer.</p></div></div>
+<div class="demo-bar"><label for="demo">Try a fictional case</label><div><select id="demo"><option value="payment">Deceived UPI payment</option><option value="credentials">Exposed password, no payment</option><option value="routine">Ordinary pending payment</option><option value="unknown">I’m not sure what happened</option></select><button id="load-demo" class="button small" type="button" disabled>Load example</button></div><p id="demo-label" hidden>Synthetic example loaded. These are invented facts.</p></div>
+<form id="incident-form"><div id="questions"><p>Loading questions…</p></div>
+<details class="incident-details"><summary>Optional details for your summary</summary><p>Never enter passwords, PINs, OTPs or full account numbers. Notes are not analysed to determine the checklist.</p><label for="amount">Amount involved (INR, if known)</label><input id="amount" name="amount" type="number" min="0" max="999999999999" step="0.01" placeholder="Leave blank if unknown"><label for="reference">Transaction or complaint reference (optional)</label><input id="reference" maxlength="120" autocomplete="off"><label for="notes">What you want to remember (optional)</label><textarea id="notes" maxlength="1500" rows="3" placeholder="A short timeline, without sensitive credentials"></textarea></details>
+<button class="button primary" id="assess" type="submit" disabled>Show my next steps <span aria-hidden="true">→</span></button><p id="form-error" class="form-inline-error" role="alert" hidden></p><p class="form-foot">Answer the questions first. Your personalized checklist appears after you choose “Show my next steps”. You can edit your answers later.</p></form>
+<button id="reset" class="text-button" type="button">Clear this session</button>
+</section>
+<section class="panel results-panel" id="results-panel" aria-labelledby="result-heading" hidden><div class="section-title"><span class="step">02</span><div><h2 id="result-heading">Your next steps</h2><p id="result-subtitle">Step 2 of 2 · Based on your answers</p></div><button id="edit-answers" class="button small edit-answers" type="button">← Edit answers</button></div>
+<p id="status" role="status" aria-live="polite"></p><p id="error" role="alert" hidden></p>
+<div id="empty"><div class="empty-icon" aria-hidden="true">✓</div><h3>Start with what you know.</h3><p>Your relevant actions will appear here, with a reason and a source. You can take urgent action before completing this form.</p><div class="mini-rule"></div><p>Opening a reporting link does not file a complaint.</p></div>
+<div id="result" hidden><div class="progress-heading"><strong id="progress-label"></strong><span>self-reported</span></div><progress id="progress" max="1" value="0" aria-label="Checklist completion"></progress><p class="muted small-copy">Marks below record steps you take after these answers. Your bank or an authority has not verified them.</p><div id="notices"></div><ol id="actions"></ol><details id="unknown-box"><summary>Details still to clarify</summary><ul id="unknowns"></ul></details><div class="export"><h3>Keep a clear record.</h3><p>Download your answers, relevant actions and progress. Review the file before sharing it.</p><button id="download" class="button primary" type="button">Download incident summary ↓</button></div></div>
+</section>
+</div>
+<section class="support-grid" id="india-resources" aria-label="Bengaluru assistance">
+<details class="panel support-panel" id="police-resources">
+  <summary id="police-heading">Find police assistance in Bengaluru</summary><p>Open a Google Maps search for an area you choose.</p>
+  <label for="police-region">Bengaluru region</label>
+  <select id="police-region">
+    <option>Central</option><option>North</option><option>South</option><option>East</option><option>West</option><option>North-East</option><option>North-West</option><option>South-East</option><option>South-West</option>
+  </select>
+  <label for="police-locality">Locality (optional)</label>
+  <input id="police-locality" type="text" maxlength="100" placeholder="e.g., Whitefield, Jayanagar or Yelahanka" autocomplete="off">
+  <button class="button primary" id="maps-search" type="button">Search on Google Maps ↗</button>
+  <p class="support-note">Google Maps results do not establish the nearest authorized police station. Regions are search areas, not police jurisdiction boundaries. Your selected area or locality is sent to Google when you search; incident details are not included. Verify the station and its jurisdiction with official sources before visiting.</p>
+</details>
+<details class="panel support-panel" id="bank-resources">
+  <summary id="bank-heading">Contact your bank</summary><p>Official resources for customers in India.</p>
+  <ul class="bank-list">
+<li><strong>SBI</strong><a href="tel:1800111109">1800 11 1109</a><span>Unauthorised electronic transaction reporting (toll free).</span><a href="https://sbi.bank.in/en/web/customer-care/contact-us" target="_blank" rel="noopener noreferrer">Official SBI source ↗</a></li>
+<li><strong>HDFC Bank</strong><a href="tel:18001600">1800 1600</a><span>Bank helpline, including online fraud and unauthorised/disputed transaction reporting.</span><a href="https://www.hdfc.bank.in/contact-us" target="_blank" rel="noopener noreferrer">Official HDFC Bank source ↗</a></li>
+<li><strong>ICICI Bank</strong><a href="tel:18002662">1800 2662</a><span>Online fraud reporting helpline.</span><a href="https://www.icici.bank.in/customer-care" target="_blank" rel="noopener noreferrer">Official ICICI Bank source ↗</a></li>
+<li><strong>Axis Bank</strong><a href="tel:18004030">1800 4030</a><span>Retail phone banking (toll free). Ask for assistance reporting suspected fraud; this is a general banking line.</span><a href="https://www.axis.bank.in/contact-us" target="_blank" rel="noopener noreferrer">Official Axis Bank source ↗</a></li>
+</ul>
+  <p class="support-note">Contact details checked against official bank pages on 28 October 2026. No reimbursement is guaranteed. Avoid numbers from unsolicited calls or messages.</p>
+</details>
+</section>
+
+
+<footer><p><strong>Guidance, not a verdict.</strong> This prototype does not confirm fraud, submit complaints or guarantee recovery. Guidance and routing still require team review.</p><p>Based on linked public guidance. General security advice adapted from overseas sources is labelled separately. Refreshing or closing this page clears your session.</p><span>WALL STREET WOLVES · DECAcode 2026 · v0.1.2-rc1</span></footer>
+</main></body></html>

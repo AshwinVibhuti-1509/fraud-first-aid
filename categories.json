@@ -1,0 +1,162 @@
+[
+  {
+    "category_id": "C01",
+    "name": "Phishing / credential solicitation",
+    "description": "Credentials requested through a deceptive message.",
+    "source_category": "Phishing scams",
+    "source_id": "S03",
+    "mapping_status": "conceptual_not_statistical",
+    "classification_note": "Provisional, non-exclusive product label; not a legal finding.",
+    "mvp_support": "core"
+  },
+  {
+    "category_id": "C02",
+    "name": "Relationship-based scam",
+    "description": "Trust from an online relationship used to request money.",
+    "source_category": "Relationship scams",
+    "source_id": "S03",
+    "mapping_status": "conceptual_not_statistical",
+    "classification_note": "Provisional, non-exclusive product label; not a legal finding.",
+    "mvp_support": "generic_guidance_only"
+  },
+  {
+    "category_id": "C03",
+    "name": "Investment offer scam",
+    "description": "A purported investment uses deceptive returns or withdrawal demands.",
+    "source_category": "Investment scams",
+    "source_id": "S03",
+    "mapping_status": "conceptual_not_statistical",
+    "classification_note": "Provisional, non-exclusive product label; not a legal finding.",
+    "mvp_support": "generic_guidance_only"
+  },
+  {
+    "category_id": "C04",
+    "name": "Account or identity takeover",
+    "description": "Someone may control an account or misuse identity details.",
+    "source_category": "Account or identity takeover scams",
+    "source_id": "S03",
+    "mapping_status": "conceptual_not_statistical",
+    "classification_note": "Provisional, non-exclusive product label; not a legal finding.",
+    "mvp_support": "generic_guidance_only"
+  },
+  {
+    "category_id": "C05",
+    "name": "Buying or selling scam",
+    "description": "A deceptive transaction involving a product or service.",
+    "source_category": "Buying and selling scams",
+    "source_id": "S03",
+    "mapping_status": "conceptual_not_statistical",
+    "classification_note": "Provisional, non-exclusive product label; not a legal finding.",
+    "mvp_support": "core"
+  },
+  {
+    "category_id": "C06",
+    "name": "Threat or authority impersonation",
+    "description": "A threat or false authority claim pressures a payment.",
+    "source_category": "Threat scams",
+    "source_id": "S03",
+    "mapping_status": "conceptual_not_statistical",
+    "classification_note": "Provisional, non-exclusive product label; not a legal finding.",
+    "mvp_support": "generic_guidance_only"
+  },
+  {
+    "category_id": "C07",
+    "name": "Job or task scam",
+    "description": "An employment or task offer requires deceptive payments.",
+    "source_category": "Jobs and employment scams",
+    "source_id": "S03",
+    "mapping_status": "conceptual_not_statistical",
+    "classification_note": "Provisional, non-exclusive product label; not a legal finding.",
+    "mvp_support": "generic_guidance_only"
+  },
+  {
+    "category_id": "C08",
+    "name": "Unexpected prize or rebate",
+    "description": "An unexpected windfall requires fees or information.",
+    "source_category": "Unexpected money scams",
+    "source_id": "S03",
+    "mapping_status": "conceptual_not_statistical",
+    "classification_note": "Provisional, non-exclusive product label; not a legal finding.",
+    "mvp_support": "generic_guidance_only"
+  },
+  {
+    "category_id": "C09",
+    "name": "Invoice / business email compromise",
+    "description": "An invoice directs payment to substituted recipient details.",
+    "source_category": "Business email compromise scams",
+    "source_id": "S03",
+    "mapping_status": "conceptual_not_statistical",
+    "classification_note": "Provisional, non-exclusive product label; not a legal finding.",
+    "mvp_support": "generic_guidance_only"
+  },
+  {
+    "category_id": "C10",
+    "name": "Recovery-fee scam",
+    "description": "Someone promises to recover an earlier loss for a fee.",
+    "source_category": "Money recovery scams",
+    "source_id": "S03",
+    "mapping_status": "conceptual_not_statistical",
+    "classification_note": "Provisional, non-exclusive product label; not a legal finding.",
+    "mvp_support": "generic_guidance_only"
+  },
+  {
+    "category_id": "C11",
+    "name": "Donation impersonation",
+    "description": "A supposed charity or collection may be deceptive.",
+    "source_category": "Donation scams",
+    "source_id": "S03",
+    "mapping_status": "conceptual_not_statistical",
+    "classification_note": "Provisional, non-exclusive product label; not a legal finding.",
+    "mvp_support": "generic_guidance_only"
+  },
+  {
+    "category_id": "C12",
+    "name": "Betting or gambling scam",
+    "description": "A betting offer or platform uses deceptive terms or payments.",
+    "source_category": "Gambling and betting scams",
+    "source_id": "S03",
+    "mapping_status": "conceptual_not_statistical",
+    "classification_note": "Provisional, non-exclusive product label; not a legal finding.",
+    "mvp_support": "generic_guidance_only"
+  },
+  {
+    "category_id": "C13",
+    "name": "Unrecognised financial transaction",
+    "description": "A transaction is not recognised; authorisation remains to be clarified.",
+    "source_category": "Unauthorised electronic banking transaction context",
+    "source_id": "S02",
+    "mapping_status": "conceptual_not_statistical",
+    "classification_note": "Provisional, non-exclusive product label; not a legal finding.",
+    "mvp_support": "core"
+  },
+  {
+    "category_id": "C14",
+    "name": "Remote-access exposure",
+    "description": "A stranger may control the device used for financial accounts.",
+    "source_category": "Access to computer or phone",
+    "source_id": "S05",
+    "mapping_status": "conceptual_not_statistical",
+    "classification_note": "Provisional, non-exclusive product label; not a legal finding.",
+    "mvp_support": "core"
+  },
+  {
+    "category_id": "C15",
+    "name": "Payment issue without established fraud",
+    "description": "Delay or failure alone does not establish a scam.",
+    "source_category": "Product-designed negative/control category",
+    "source_id": null,
+    "mapping_status": "project_designed",
+    "classification_note": "Provisional, non-exclusive product label; not a legal finding.",
+    "mvp_support": "core"
+  },
+  {
+    "category_id": "C16",
+    "name": "Insufficient information / mixed situation",
+    "description": "Facts are missing or do not support one reliable category.",
+    "source_category": "Product-designed clarification category",
+    "source_id": null,
+    "mapping_status": "project_designed",
+    "classification_note": "Provisional, non-exclusive product label; not a legal finding.",
+    "mvp_support": "core"
+  }
+]

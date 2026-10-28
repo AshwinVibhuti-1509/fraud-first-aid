@@ -1,0 +1,23 @@
+test_blank_and_zero_amount_distinct (test_app.Acceptance.test_blank_and_zero_amount_distinct) ... ok
+test_completion_dropped_for_changed_context (test_app.Acceptance.test_completion_dropped_for_changed_context) ... ok
+test_completion_preserved_for_unchanged_step (test_app.Acceptance.test_completion_preserved_for_unchanged_step) ... ok
+test_contradiction_visible_not_silently_fixed (test_app.Acceptance.test_contradiction_visible_not_silently_fixed) ... ok
+test_credentials_without_loss (test_app.Acceptance.test_credentials_without_loss) ... ok
+test_deceived_payment (test_app.Acceptance.test_deceived_payment) ... ok
+test_invalid_amounts (test_app.Acceptance.test_invalid_amounts) ... ok
+test_known_report_is_not_repeated (test_app.Acceptance.test_known_report_is_not_repeated) ... ok
+test_other_country (test_app.Acceptance.test_other_country) ... ok
+test_overlapping_device_and_account_exposure (test_app.Acceptance.test_overlapping_device_and_account_exposure) ... ok
+test_removed_step_dropped (test_app.Acceptance.test_removed_step_dropped) ... ok
+test_routine_payment_not_assumed_fraud (test_app.Acceptance.test_routine_payment_not_assumed_fraud) ... ok
+test_summary_truthful_and_current (test_app.Acceptance.test_summary_truthful_and_current) ... ok
+test_unknown_does_not_invent_a_verdict (test_app.Acceptance.test_unknown_does_not_invent_a_verdict) ... ok
+test_full_api_and_export (test_app.Integration.test_full_api_and_export) ... ok
+test_no_state_leaks_between_requests (test_app.Integration.test_no_state_leaks_between_requests) ... ok
+test_page_assets_and_questions (test_app.Integration.test_page_assets_and_questions) ... ok
+test_validation (test_app.Integration.test_validation) ... ok
+
+----------------------------------------------------------------------
+Ran 18 tests in 0.043s
+
+OK
