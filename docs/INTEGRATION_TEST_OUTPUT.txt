@@ -1,0 +1,62 @@
+Fraud First Aid 0.1.2-rc1 — local implementation checks
+test_blank_and_zero_amount_distinct (test_app.Acceptance.test_blank_and_zero_amount_distinct) ... ok
+test_completion_dropped_for_changed_context (test_app.Acceptance.test_completion_dropped_for_changed_context) ... ok
+test_completion_preserved_for_unchanged_step (test_app.Acceptance.test_completion_preserved_for_unchanged_step) ... ok
+test_contradiction_visible_not_silently_fixed (test_app.Acceptance.test_contradiction_visible_not_silently_fixed) ... ok
+test_credentials_without_loss (test_app.Acceptance.test_credentials_without_loss) ... ok
+test_deceived_payment (test_app.Acceptance.test_deceived_payment) ... ok
+test_invalid_amounts (test_app.Acceptance.test_invalid_amounts) ... ok
+test_known_report_is_not_repeated (test_app.Acceptance.test_known_report_is_not_repeated) ... ok
+test_other_country (test_app.Acceptance.test_other_country) ... ok
+test_overlapping_device_and_account_exposure (test_app.Acceptance.test_overlapping_device_and_account_exposure) ... ok
+test_removed_step_dropped (test_app.Acceptance.test_removed_step_dropped) ... ok
+test_routine_payment_not_assumed_fraud (test_app.Acceptance.test_routine_payment_not_assumed_fraud) ... ok
+test_summary_truthful_and_current (test_app.Acceptance.test_summary_truthful_and_current) ... ok
+test_unknown_does_not_invent_a_verdict (test_app.Acceptance.test_unknown_does_not_invent_a_verdict) ... ok
+test_full_api_and_export (test_app.Integration.test_full_api_and_export) ... ok
+test_no_state_leaks_between_requests (test_app.Integration.test_no_state_leaks_between_requests) ... ok
+test_page_assets_and_questions (test_app.Integration.test_page_assets_and_questions) ... ok
+test_validation (test_app.Integration.test_validation) ... ok
+test_exact_demo_and_export (test_candidate.CandidateAcceptance.test_exact_demo_and_export) ... ok
+test_exposure_without_loss_keeps_conditional_banking_guidance (test_candidate.CandidateAcceptance.test_exposure_without_loss_keeps_conditional_banking_guidance) ... ok
+test_human_review_labels_remain_pending (test_candidate.CandidateAcceptance.test_human_review_labels_remain_pending) ... ok
+test_unknown_and_non_india_scope (test_candidate.CandidateAcceptance.test_unknown_and_non_india_scope) ... ok
+test_multiline_fields_cannot_forge_status_lines (test_export_integrity.ExportIntegrity.test_multiline_fields_cannot_forge_status_lines) ... ok
+test_quotes_backslashes_and_unicode_round_trip (test_export_integrity.ExportIntegrity.test_quotes_backslashes_and_unicode_round_trip) ... ok
+test_summary_endpoint_and_true_completion_remain_correct (test_export_integrity.ExportIntegrity.test_summary_endpoint_and_true_completion_remain_correct) ... ok
+test_resource_structure_and_verified_directory (test_resources.ResourceAcceptance.test_resource_structure_and_verified_directory) ... ok
+test_seven_to_eight_actions_and_export (test_resources.ResourceAcceptance.test_seven_to_eight_actions_and_export) ... ok
+
+----------------------------------------------------------------------
+Ran 27 tests in 0.057s
+
+OK
+{"database_scenarios": 56, "mismatches": []}
+✔ an export failure arriving after reset cannot resurrect an error (12.057964ms)
+✔ invalid assessment clears a previous network error (2.428987ms)
+✔ answer change during first request starts a newer assessment (2.190681ms)
+✔ late older response cannot replace the latest assessment (2.015146ms)
+✔ reset during a request prevents old results returning (3.696724ms)
+✔ network failure retains answers and hides obsolete results (1.9308ms)
+✔ invalid form blocks requests and disables summary export (1.604511ms)
+✔ country selection immediately hides India urgent reporting strip (1.867206ms)
+✔ completion is sent to export and a download is requested (3.085662ms)
+ℹ tests 9
+ℹ suites 0
+ℹ pass 9
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 149.453985
+Completed available checks. Browser walkthrough and human guidance review are separate gates.
+✔ Maps encodes locality and never includes incident notes (7.544979ms)
+✔ Another country hides India contacts and blocks Maps; reset restores and clears locality (4.137626ms)
+ℹ tests 2
+ℹ suites 0
+ℹ pass 2
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 119.066369

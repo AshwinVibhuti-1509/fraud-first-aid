@@ -1,0 +1,53 @@
+✖ an export failure arriving after reset cannot resurrect an error (12.99147ms)
+✖ invalid assessment clears a previous network error (2.356675ms)
+✔ answer change during first request starts a newer assessment (2.263066ms)
+✔ late older response cannot replace the latest assessment (1.862242ms)
+✔ reset during a request prevents old results returning (2.864769ms)
+✔ network failure retains answers and hides obsolete results (1.589989ms)
+✔ invalid form blocks requests and disables summary export (1.291436ms)
+✔ country selection immediately hides India urgent reporting strip (1.418924ms)
+✔ completion is sent to export and a download is requested (2.410425ms)
+ℹ tests 9
+ℹ suites 0
+ℹ pass 7
+ℹ fail 2
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 113.572874
+
+✖ failing tests:
+
+test at tests/frontend.test.cjs:12:1
+✖ an export failure arriving after reset cannot resurrect an error (12.99147ms)
+  AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
+  
+  false !== true
+  
+      at TestContext.<anonymous> (/tmp/ffa-baseline-red-3d0u_qqv/baseline/tests/frontend.test.cjs:17:9)
+      at async Test.run (node:internal/test_runner/test:1409:7)
+      at async startSubtestAfterBootstrap (node:internal/test_runner/harness:387:3) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: false,
+    expected: true,
+    operator: 'strictEqual',
+    diff: 'simple'
+  }
+
+test at tests/frontend.test.cjs:21:1
+✖ invalid assessment clears a previous network error (2.356675ms)
+  AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
+  
+  false !== true
+  
+      at TestContext.<anonymous> (/tmp/ffa-baseline-red-3d0u_qqv/baseline/tests/frontend.test.cjs:26:9)
+      at async Test.run (node:internal/test_runner/test:1409:7)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:974:7) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: false,
+    expected: true,
+    operator: 'strictEqual',
+    diff: 'simple'
+  }
