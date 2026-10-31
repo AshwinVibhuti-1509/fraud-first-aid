@@ -24,7 +24,15 @@ def main():
         return 1
     node = shutil.which('node')
     if node:
-        frontend = subprocess.run([node, '--test', 'tests/frontend.test.cjs'], cwd=ROOT)
+        test_files = [
+            str(path.relative_to(ROOT))
+            for path in sorted((ROOT / 'tests').glob('*.test.cjs'))
+        ]
+
+        frontend = subprocess.run(
+        [node, '--test', *test_files],
+            cwd=ROOT,
+        )
         if frontend.returncode:
             return frontend.returncode
     else:
