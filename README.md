@@ -158,10 +158,12 @@ a victim's next action. Synthetic examples are not actual complaints.
 
 ## Session privacy
 
-Answers and completion live in browser memory; requests are processed transiently
-by your local Python server. No incidents are written to disk or browser storage.
-Refresh/close clears the form. Downloaded summaries remain wherever you save them;
-review and protect those files. Never enter secrets or full bank-account details.
+Answers and optional details are sent to the Flask server to generate
+the checklist and summary. The application does not persist incident
+records. Hosting-provider logging is separate from application storage.
+Refreshing or closing the page clears the interface state; downloaded
+summaries remain on your device. Never enter passwords, PINs, OTPs
+or full bank-account details.
 
 ## Git checkpoint on your laptop
 
