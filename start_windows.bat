@@ -5,9 +5,9 @@ if not exist ".venv\Scripts\python.exe" (
   py -m venv .venv
   if errorlevel 1 goto failed
 )
-".venv\Scripts\python.exe" -c "import flask" >nul 2>&1
+".venv\Scripts\python.exe" -c "import flask, PIL" >nul 2>&1
 if errorlevel 1 (
-  echo Installing Flask. Internet is needed for this first setup.
+  echo Installing Flask and Pillow. Internet is needed for this first setup.
   ".venv\Scripts\python.exe" -m pip install -r requirements.txt
   if errorlevel 1 goto failed
 )

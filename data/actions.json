@@ -15,7 +15,7 @@
     "title": "Use official financial-fraud reporting",
     "action_text": "For suspected financial cyberfraud in India, call 1930 or use cybercrime.gov.in. Do not wait for this questionnaire to finish.",
     "origin": "official_india_paraphrase",
-    "source_id": "S01",
+    "source_id": "S10",
     "jurisdiction": "IN",
     "review_status": "source_paraphrase_team_review_pending",
     "checked_on": "2026-10-27",
@@ -37,7 +37,7 @@
     "title": "Secure exposed account credentials",
     "action_text": "For an exposed password, use the account provider’s genuine recovery process; replace exposed or reused passwords and enable two-factor authentication where available. If banking account credentials, a banking PIN or an OTP were exposed, promptly contact the affected bank or payment provider through its genuine app or official website, even if no financial loss is yet known. Ask how to secure the affected access. This banking step applies only if banking or payment access was involved. Banking-contact reference: https://cyber.delhipolice.gov.in/vishing.html",
     "origin": "general_security_adaptation",
-    "source_id": "S05",
+    "source_id": "S09",
     "jurisdiction": "IN",
     "review_status": "adaptation_team_review_pending",
     "checked_on": "2026-10-28",
@@ -130,5 +130,71 @@
     "review_status": "project_proposal_team_review_pending",
     "checked_on": "2026-10-27",
     "refund_guarantee": false
+  },
+  {
+    "action_id": "A13",
+    "title": "Do not make further payments under pressure",
+    "action_text": "If someone is threatening or impersonating an authority, do not transfer more money to satisfy their demands. If you are in immediate danger, seek local emergency assistance. Use official channels to verify any claims.",
+    "origin": "india_official_guidance_and_project_workflow",
+    "source_id": "S10",
+    "jurisdiction": "IN",
+    "review_status": "team_interpretation_review_pending",
+    "refund_guarantee": false,
+    "group": "urgent"
+  },
+  {
+    "action_id": "A14",
+    "title": "Review suspicious calls or SIM concerns",
+    "action_text": "If your mobile connection suddenly stops working or you received a suspicious communication, contact your telecom provider through its genuine channel. Sanchar Saathi provides tools to check mobile connections and report suspected fraudulent communications; financial cyberfraud still belongs with the bank and 1930.",
+    "origin": "india_official_guidance_and_project_workflow",
+    "source_id": "S11",
+    "jurisdiction": "IN",
+    "review_status": "team_interpretation_review_pending",
+    "refund_guarantee": false,
+    "group": "secure"
+  },
+  {
+    "action_id": "A15",
+    "title": "Secure access to affected online accounts",
+    "action_text": "If your account may have been accessed by someone else, use the provider’s genuine recovery process, review sign-in activity, and update access protections from a trusted device. Contact a financial provider promptly if payment access might be affected.",
+    "origin": "india_official_guidance_and_project_workflow",
+    "source_id": "S09",
+    "jurisdiction": "IN",
+    "review_status": "team_interpretation_review_pending",
+    "refund_guarantee": false,
+    "group": "secure"
+  },
+  {
+    "action_id": "A16",
+    "title": "Preserve relevant messages and transaction evidence",
+    "action_text": "Keep relevant transaction references, dates, and messages available to the bank or official reporting portal. Do not share OTPs, PINs or passwords with this app.",
+    "origin": "india_official_guidance_and_project_workflow",
+    "source_id": "S10",
+    "jurisdiction": "IN",
+    "review_status": "team_interpretation_review_pending",
+    "refund_guarantee": false,
+    "group": "report"
+  },
+  {
+    "action_id": "A17",
+    "title": "Review conditional RBI customer-protection information",
+    "action_text": "RBI provides separate protections for some unauthorised electronic banking transactions. Whether any protection applies depends on the transaction, bank, circumstances and reporting facts. This app does not calculate liability, deadlines or refunds. Notify your bank promptly.",
+    "origin": "india_official_guidance_and_project_workflow",
+    "source_id": "S13",
+    "jurisdiction": "IN",
+    "review_status": "team_interpretation_review_pending",
+    "refund_guarantee": false,
+    "group": "followup"
+  },
+  {
+    "action_id": "A18",
+    "title": "Track complaint acknowledgements and official updates",
+    "action_text": "If you have already reported, keep the actual bank acknowledgement and cybercrime complaint references, check status through genuine channels, and record any next follow-up you choose. No complaint is submitted by this app.",
+    "origin": "india_official_guidance_and_project_workflow",
+    "source_id": "S10",
+    "jurisdiction": "IN",
+    "review_status": "team_interpretation_review_pending",
+    "refund_guarantee": false,
+    "group": "followup"
   }
 ]

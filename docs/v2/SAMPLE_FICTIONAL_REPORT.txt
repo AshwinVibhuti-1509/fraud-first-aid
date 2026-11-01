@@ -1,0 +1,76 @@
+FRAUD FIRST AID — PERSONAL INCIDENT SUMMARY
+User-provided facts; not verified by a bank, authority or this prototype.
+No complaint has been submitted by this app.
+
+ANSWERS AT ASSESSMENT
+Where do you need reporting guidance?: IN
+Do you suspect deception or unauthorised activity?: yes
+Has money actually left your account or possession?: yes
+How was the payment made?: upi
+Were passwords, PINs, OTPs or account access possibly exposed?: no
+Did someone gain or request remote device access?: yes
+Have you actually reported it to the bank?: no
+Have you actually reported through an official channel?: no
+
+Amount (INR): Unknown / not provided
+Reference (user supplied; JSON-escaped): Not provided
+Notes (user supplied; JSON-escaped): Not provided
+
+CHECKLIST PROGRESS SINCE ASSESSMENT (SELF-REPORTED)
+NOT MARKED DONE — Contact your bank
+Report the suspected fraudulent transaction to your bank promptly through its genuine app or official contact details, and obtain an acknowledgement. Explain whether you made the payment yourself. This prototype does not determine refund eligibility or liability, including for payments authorised after deception.
+Why shown: Suspected or uncertain fraud involving possible debit warrants prompt verification with the bank; this does not determine liability.
+Source: https://www.rbi.org.in/commonman/english/Scripts/SMSLimitedliability.aspx
+NOT MARKED DONE — Use official financial-fraud reporting
+For suspected financial cyberfraud in India, call 1930 or use cybercrime.gov.in. Do not wait for this questionnaire to finish.
+Why shown: Official financial cyberfraud reporting should be readily available for a suspicious or uncertain debit; not a finding of fraud.
+Source: https://cybercrime.gov.in/
+NOT MARKED DONE — Pause further payments
+Stop sending additional money when you suspect a scam.
+Why shown: Prevent additional transfers while clarifying the incident.
+Source: https://www.scamwatch.gov.au/stop-check-protect/what-to-do-if-youve-been-scammed
+NOT MARKED DONE — Get trusted device-security help
+For suspected remote access, seek help from the device manufacturer or a trusted support provider; update security software and check for unwanted software. Secure accounts from a trusted device.
+Why shown: Device exposure is an independent flag.
+Source: https://consumer.ftc.gov/articles/what-do-if-you-were-scammed
+NOT MARKED DONE — Contact the payment provider
+If a payment app, exchange or gift-card provider was involved, contact that provider through its genuine support channel and ask what reporting or recovery options exist. Recovery is not assured.
+Why shown: Provider-specific assistance is an adapted suggestion, not a guaranteed remedy.
+Source: https://consumer.ftc.gov/articles/what-do-if-you-were-scammed
+DONE — Organise incident facts
+Keep a timeline, amount, payment channel, transaction reference and relevant messages available. Do not put PINs, passwords or OTPs in this app. Do not delay reporting to complete this list.
+Why shown: Evidence organisation must not delay reporting.
+Source: Team-designed organisational suggestion
+NOT MARKED DONE — Keep reporting references
+Record the bank acknowledgement and any complaint reference actually received. Mark completion only after you have performed the action.
+Why shown: Preserve acknowledgements without inventing successful reporting.
+Source: https://www.rbi.org.in/commonman/english/Scripts/SMSLimitedliability.aspx
+NOT MARKED DONE — Watch for recovery-fee approaches
+Be cautious of a new contact offering to recover lost money for an upfront payment.
+Why shown: A loss can attract another scam.
+Source: https://www.scamwatch.gov.au/stop-check-protect/what-to-do-if-youve-been-scammed
+
+ITEMS TO CLARIFY
+None marked unknown.
+
+Prototype guidance, not a finding of fraud. No complaint is submitted and recovery is not guaranteed.
+
+
+USER-PREPARED INCIDENT WORKSPACE
+No report has been filed by this application. All details are user-provided, not verified.
+Incident date: "Not provided"
+Incident time: "Not provided"
+Financial institution: "Not provided"
+UTR or transaction reference: "FAKE-REF-5555"
+Website / app: "Not provided"
+Bank acknowledgement: "Not provided"
+Official complaint acknowledgement: "Not provided"
+User-chosen reminder: "2026-11-04"
+Follow-up note: "Not provided"
+Bank contacted (self-reported): Not marked
+Official report submitted (self-reported): Not marked
+TIMELINE (USER-CONFIRMED)
+Date unknown Time unknown · "Called bank via official site"
+OFFICIAL PORTAL: https://cybercrime.gov.in/
+INDIA REPORTING HELPLINE: 1930
+Use official channels; this is not a police or bank complaint.

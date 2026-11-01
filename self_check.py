@@ -13,7 +13,7 @@ def main():
     suite = subprocess.run([sys.executable, '-m', 'unittest', 'discover', '-s', 'tests', '-v'], cwd=ROOT)
     if suite.returncode:
         return suite.returncode
-    cases = load('synthetic_cases')
+    cases = load('synthetic_cases_v2')
     failed = []
     for case in cases:
         actual = {a['action_id'] for a in assess({'facts': case['facts']})['actions']}

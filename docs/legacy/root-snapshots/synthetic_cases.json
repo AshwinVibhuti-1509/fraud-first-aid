@@ -1,0 +1,2151 @@
+[
+  {
+    "case_id": "T001",
+    "category_id": "C01",
+    "variant": "attempt",
+    "narrative": "A caller claiming to handle KYC sent me a link asking for my banking password. I have not sent money in this incident. I shared account credentials. I did not allow remote device access.",
+    "facts": {
+      "country": "IN",
+      "suspected_fraud": "yes",
+      "money_moved": "no",
+      "payment_channel": "upi",
+      "credentials_exposed": "yes",
+      "remote_access": "no",
+      "bank_reported": "no",
+      "official_reported": "no"
+    },
+    "amount_inr": 0,
+    "origin": "synthetic_project_authored",
+    "is_real_incident": false,
+    "source_of_pattern": "S03",
+    "split": "development",
+    "expected_category_status": "provisional",
+    "expected_action_ids": [
+      "A02",
+      "A03",
+      "A04",
+      "A06",
+      "A07"
+    ],
+    "expectation_method": "derived_from_proposed_rules_not_independent",
+    "review_status": "human_review_pending",
+    "forbidden_conclusions": [
+      "guaranteed_refund",
+      "proven_fraud",
+      "account_frozen_by_app",
+      "report_submitted_by_app"
+    ],
+    "completion_truth": "self_reported_only"
+  },
+  {
+    "case_id": "T002",
+    "category_id": "C01",
+    "variant": "paid",
+    "narrative": "A caller claiming to handle KYC sent me a link asking for my banking password. I transferred money and now suspect deception. I shared account credentials. I did not allow remote device access.",
+    "facts": {
+      "country": "IN",
+      "suspected_fraud": "yes",
+      "money_moved": "yes",
+      "payment_channel": "upi",
+      "credentials_exposed": "yes",
+      "remote_access": "no",
+      "bank_reported": "no",
+      "official_reported": "no"
+    },
+    "amount_inr": 1000,
+    "origin": "synthetic_project_authored",
+    "is_real_incident": false,
+    "source_of_pattern": "S03",
+    "split": "development",
+    "expected_category_status": "provisional",
+    "expected_action_ids": [
+      "A01",
+      "A02",
+      "A03",
+      "A04",
+      "A08",
+      "A06",
+      "A07",
+      "A09"
+    ],
+    "expectation_method": "derived_from_proposed_rules_not_independent",
+    "review_status": "human_review_pending",
+    "forbidden_conclusions": [
+      "guaranteed_refund",
+      "proven_fraud",
+      "account_frozen_by_app",
+      "report_submitted_by_app"
+    ],
+    "completion_truth": "self_reported_only"
+  },
+  {
+    "case_id": "T003",
+    "category_id": "C01",
+    "variant": "uncertain",
+    "narrative": "A caller claiming to handle KYC sent me a link asking for my banking password. I am unsure whether money left my account or whether access was exposed.",
+    "facts": {
+      "country": "IN",
+      "suspected_fraud": "yes",
+      "money_moved": "unknown",
+      "payment_channel": "unknown",
+      "credentials_exposed": "unknown",
+      "remote_access": "unknown",
+      "bank_reported": "no",
+      "official_reported": "no"
+    },
+    "amount_inr": null,
+    "origin": "synthetic_project_authored",
+    "is_real_incident": false,
+    "source_of_pattern": "S03",
+    "split": "development",
+    "expected_category_status": "provisional",
+    "expected_action_ids": [
+      "A01",
+      "A02",
+      "A03",
+      "A06",
+      "A07",
+      "A10"
+    ],
+    "expectation_method": "derived_from_proposed_rules_not_independent",
+    "review_status": "human_review_pending",
+    "forbidden_conclusions": [
+      "guaranteed_refund",
+      "proven_fraud",
+      "account_frozen_by_app",
+      "report_submitted_by_app"
+    ],
+    "completion_truth": "self_reported_only"
+  },
+  {
+    "case_id": "T004",
+    "category_id": "C02",
+    "variant": "attempt",
+    "narrative": "An online friend asked me to fund an urgent trip, but their identity cannot be verified. I have not sent money in this incident. I have not knowingly shared credentials. I did not allow remote device access.",
+    "facts": {
+      "country": "IN",
+      "suspected_fraud": "yes",
+      "money_moved": "no",
+      "payment_channel": "upi",
+      "credentials_exposed": "no",
+      "remote_access": "no",
+      "bank_reported": "no",
+      "official_reported": "no"
+    },
+    "amount_inr": 0,
+    "origin": "synthetic_project_authored",
+    "is_real_incident": false,
+    "source_of_pattern": "S03",
+    "split": "development",
+    "expected_category_status": "provisional",
+    "expected_action_ids": [
+      "A02",
+      "A03",
+      "A06",
+      "A07"
+    ],
+    "expectation_method": "derived_from_proposed_rules_not_independent",
+    "review_status": "human_review_pending",
+    "forbidden_conclusions": [
+      "guaranteed_refund",
+      "proven_fraud",
+      "account_frozen_by_app",
+      "report_submitted_by_app"
+    ],
+    "completion_truth": "self_reported_only"
+  },
+  {
+    "case_id": "T005",
+    "category_id": "C02",
+    "variant": "paid",
+    "narrative": "An online friend asked me to fund an urgent trip, but their identity cannot be verified. I transferred money and now suspect deception. I have not knowingly shared credentials. I did not allow remote device access.",
+    "facts": {
+      "country": "IN",
+      "suspected_fraud": "yes",
+      "money_moved": "yes",
+      "payment_channel": "upi",
+      "credentials_exposed": "no",
+      "remote_access": "no",
+      "bank_reported": "no",
+      "official_reported": "no"
+    },
+    "amount_inr": 1500,
+    "origin": "synthetic_project_authored",
+    "is_real_incident": false,
+    "source_of_pattern": "S03",
+    "split": "development",
+    "expected_category_status": "provisional",
+    "expected_action_ids": [
+      "A01",
+      "A02",
+      "A03",
+      "A08",
+      "A06",
+      "A07",
+      "A09"
+    ],
+    "expectation_method": "derived_from_proposed_rules_not_independent",
+    "review_status": "human_review_pending",
+    "forbidden_conclusions": [
+      "guaranteed_refund",
+      "proven_fraud",
+      "account_frozen_by_app",
+      "report_submitted_by_app"
+    ],
+    "completion_truth": "self_reported_only"
+  },
+  {
+    "case_id": "T006",
+    "category_id": "C02",
+    "variant": "uncertain",
+    "narrative": "An online friend asked me to fund an urgent trip, but their identity cannot be verified. I am unsure whether money left my account or whether access was exposed.",
+    "facts": {
+      "country": "IN",
+      "suspected_fraud": "yes",
+      "money_moved": "unknown",
+      "payment_channel": "unknown",
+      "credentials_exposed": "unknown",
+      "remote_access": "unknown",
+      "bank_reported": "no",
+      "official_reported": "no"
+    },
+    "amount_inr": null,
+    "origin": "synthetic_project_authored",
+    "is_real_incident": false,
+    "source_of_pattern": "S03",
+    "split": "development",
+    "expected_category_status": "provisional",
+    "expected_action_ids": [
+      "A01",
+      "A02",
+      "A03",
+      "A06",
+      "A07",
+      "A10"
+    ],
+    "expectation_method": "derived_from_proposed_rules_not_independent",
+    "review_status": "human_review_pending",
+    "forbidden_conclusions": [
+      "guaranteed_refund",
+      "proven_fraud",
+      "account_frozen_by_app",
+      "report_submitted_by_app"
+    ],
+    "completion_truth": "self_reported_only"
+  },
+  {
+    "case_id": "T007",
+    "category_id": "C03",
+    "variant": "attempt",
+    "narrative": "A trading group promises guaranteed profits but requires a separate fee to release my balance. I have not sent money in this incident. I have not knowingly shared credentials. I did not allow remote device access.",
+    "facts": {
+      "country": "IN",
+      "suspected_fraud": "yes",
+      "money_moved": "no",
+      "payment_channel": "crypto",
+      "credentials_exposed": "no",
+      "remote_access": "no",
+      "bank_reported": "no",
+      "official_reported": "no"
+    },
+    "amount_inr": 0,
+    "origin": "synthetic_project_authored",
+    "is_real_incident": false,
+    "source_of_pattern": "S03",
+    "split": "development",
+    "expected_category_status": "provisional",
+    "expected_action_ids": [
+      "A02",
+      "A03",
+      "A06",
+      "A07"
+    ],
+    "expectation_method": "derived_from_proposed_rules_not_independent",
+    "review_status": "human_review_pending",
+    "forbidden_conclusions": [
+      "guaranteed_refund",
+      "proven_fraud",
+      "account_frozen_by_app",
+      "report_submitted_by_app"
+    ],
+    "completion_truth": "self_reported_only"
+  },
+  {
+    "case_id": "T008",
+    "category_id": "C03",
+    "variant": "paid",
+    "narrative": "A trading group promises guaranteed profits but requires a separate fee to release my balance. I transferred money and now suspect deception. I have not knowingly shared credentials. I did not allow remote device access.",
+    "facts": {
+      "country": "IN",
+      "suspected_fraud": "yes",
+      "money_moved": "yes",
+      "payment_channel": "crypto",
+      "credentials_exposed": "no",
+      "remote_access": "no",
+      "bank_reported": "no",
+      "official_reported": "no"
+    },
+    "amount_inr": 2000,
+    "origin": "synthetic_project_authored",
+    "is_real_incident": false,
+    "source_of_pattern": "S03",
+    "split": "development",
+    "expected_category_status": "provisional",
+    "expected_action_ids": [
+      "A02",
+      "A03",
+      "A08",
+      "A06",
+      "A07",
+      "A09"
+    ],
+    "expectation_method": "derived_from_proposed_rules_not_independent",
+    "review_status": "human_review_pending",
+    "forbidden_conclusions": [
+      "guaranteed_refund",
+      "proven_fraud",
+      "account_frozen_by_app",
+      "report_submitted_by_app"
+    ],
+    "completion_truth": "self_reported_only"
+  },
+  {
+    "case_id": "T009",
+    "category_id": "C03",
+    "variant": "uncertain",
+    "narrative": "A trading group promises guaranteed profits but requires a separate fee to release my balance. I am unsure whether money left my account or whether access was exposed.",
+    "facts": {
+      "country": "IN",
+      "suspected_fraud": "yes",
+      "money_moved": "unknown",
+      "payment_channel": "unknown",
+      "credentials_exposed": "unknown",
+      "remote_access": "unknown",
+      "bank_reported": "no",
+      "official_reported": "no"
+    },
+    "amount_inr": null,
+    "origin": "synthetic_project_authored",
+    "is_real_incident": false,
+    "source_of_pattern": "S03",
+    "split": "development",
+    "expected_category_status": "provisional",
+    "expected_action_ids": [
+      "A01",
+      "A02",
+      "A03",
+      "A06",
+      "A07",
+      "A10"
+    ],
+    "expectation_method": "derived_from_proposed_rules_not_independent",
+    "review_status": "human_review_pending",
+    "forbidden_conclusions": [
+      "guaranteed_refund",
+      "proven_fraud",
+      "account_frozen_by_app",
+      "report_submitted_by_app"
+    ],
+    "completion_truth": "self_reported_only"
+  },
+  {
+    "case_id": "T010",
+    "category_id": "C04",
+    "variant": "attempt",
+    "narrative": "My account profile changed without my permission and I cannot sign in. I have not sent money in this incident. I shared account credentials. I did not allow remote device access.",
+    "facts": {
+      "country": "IN",
+      "suspected_fraud": "yes",
+      "money_moved": "no",
+      "payment_channel": "upi",
+      "credentials_exposed": "yes",
+      "remote_access": "no",
+      "bank_reported": "no",
+      "official_reported": "no"
+    },
+    "amount_inr": 0,
+    "origin": "synthetic_project_authored",
+    "is_real_incident": false,
+    "source_of_pattern": "S03",
+    "split": "development",
+    "expected_category_status": "provisional",
+    "expected_action_ids": [
+      "A02",
+      "A03",
+      "A04",
+      "A06",
+      "A07"
+    ],
+    "expectation_method": "derived_from_proposed_rules_not_independent",
+    "review_status": "human_review_pending",
+    "forbidden_conclusions": [
+      "guaranteed_refund",
+      "proven_fraud",
+      "account_frozen_by_app",
+      "report_submitted_by_app"
+    ],
+    "completion_truth": "self_reported_only"
+  },
+  {
+    "case_id": "T011",
+    "category_id": "C04",
+    "variant": "paid",
+    "narrative": "My account profile changed without my permission and I cannot sign in. I transferred money and now suspect deception. I shared account credentials. I did not allow remote device access.",
+    "facts": {
+      "country": "IN",
+      "suspected_fraud": "yes",
+      "money_moved": "yes",
+      "payment_channel": "upi",
+      "credentials_exposed": "yes",
+      "remote_access": "no",
+      "bank_reported": "no",
+      "official_reported": "no"
+    },
+    "amount_inr": 2500,
+    "origin": "synthetic_project_authored",
+    "is_real_incident": false,
+    "source_of_pattern": "S03",
+    "split": "development",
+    "expected_category_status": "provisional",
+    "expected_action_ids": [
+      "A01",
+      "A02",
+      "A03",
+      "A04",
+      "A08",
+      "A06",
+      "A07",
+      "A09"
+    ],
+    "expectation_method": "derived_from_proposed_rules_not_independent",
+    "review_status": "human_review_pending",
+    "forbidden_conclusions": [
+      "guaranteed_refund",
+      "proven_fraud",
+      "account_frozen_by_app",
+      "report_submitted_by_app"
+    ],
+    "completion_truth": "self_reported_only"
+  },
+  {
+    "case_id": "T012",
+    "category_id": "C04",
+    "variant": "uncertain",
+    "narrative": "My account profile changed without my permission and I cannot sign in. I am unsure whether money left my account or whether access was exposed.",
+    "facts": {
+      "country": "IN",
+      "suspected_fraud": "yes",
+      "money_moved": "unknown",
+      "payment_channel": "unknown",
+      "credentials_exposed": "unknown",
+      "remote_access": "unknown",
+      "bank_reported": "no",
+      "official_reported": "no"
+    },
+    "amount_inr": null,
+    "origin": "synthetic_project_authored",
+    "is_real_incident": false,
+    "source_of_pattern": "S03",
+    "split": "development",
+    "expected_category_status": "provisional",
+    "expected_action_ids": [
+      "A01",
+      "A02",
+      "A03",
+      "A06",
+      "A07",
+      "A10"
+    ],
+    "expectation_method": "derived_from_proposed_rules_not_independent",
+    "review_status": "human_review_pending",
+    "forbidden_conclusions": [
+      "guaranteed_refund",
+      "proven_fraud",
+      "account_frozen_by_app",
+      "report_submitted_by_app"
+    ],
+    "completion_truth": "self_reported_only"
+  },
+  {
+    "case_id": "T013",
+    "category_id": "C05",
+    "variant": "attempt",
+    "narrative": "A seller of concert tickets disappeared from the marketplace after asking for payment. I have not sent money in this incident. I have not knowingly shared credentials. I did not allow remote device access.",
+    "facts": {
+      "country": "IN",
+      "suspected_fraud": "yes",
+      "money_moved": "no",
+      "payment_channel": "upi",
+      "credentials_exposed": "no",
+      "remote_access": "no",
+      "bank_reported": "no",
+      "official_reported": "no"
+    },
+    "amount_inr": 0,
+    "origin": "synthetic_project_authored",
+    "is_real_incident": false,
+    "source_of_pattern": "S03",
+    "split": "development",
+    "expected_category_status": "provisional",
+    "expected_action_ids": [
+      "A02",
+      "A03",
+      "A06",
+      "A07"
+    ],
+    "expectation_method": "derived_from_proposed_rules_not_independent",
+    "review_status": "human_review_pending",
+    "forbidden_conclusions": [
+      "guaranteed_refund",
+      "proven_fraud",
+      "account_frozen_by_app",
+      "report_submitted_by_app"
+    ],
+    "completion_truth": "self_reported_only"
+  },
+  {
+    "case_id": "T014",
+    "category_id": "C05",
+    "variant": "paid",
+    "narrative": "A seller of concert tickets disappeared from the marketplace after asking for payment. I transferred money and now suspect deception. I have not knowingly shared credentials. I did not allow remote device access.",
+    "facts": {
+      "country": "IN",
+      "suspected_fraud": "yes",
+      "money_moved": "yes",
+      "payment_channel": "upi",
+      "credentials_exposed": "no",
+      "remote_access": "no",
+      "bank_reported": "no",
+      "official_reported": "no"
+    },
+    "amount_inr": 3000,
+    "origin": "synthetic_project_authored",
+    "is_real_incident": false,
+    "source_of_pattern": "S03",
+    "split": "development",
+    "expected_category_status": "provisional",
+    "expected_action_ids": [
+      "A01",
+      "A02",
+      "A03",
+      "A08",
+      "A06",
+      "A07",
+      "A09"
+    ],
+    "expectation_method": "derived_from_proposed_rules_not_independent",
+    "review_status": "human_review_pending",
+    "forbidden_conclusions": [
+      "guaranteed_refund",
+      "proven_fraud",
+      "account_frozen_by_app",
+      "report_submitted_by_app"
+    ],
+    "completion_truth": "self_reported_only"
+  },
+  {
+    "case_id": "T015",
+    "category_id": "C05",
+    "variant": "uncertain",
+    "narrative": "A seller of concert tickets disappeared from the marketplace after asking for payment. I am unsure whether money left my account or whether access was exposed.",
+    "facts": {
+      "country": "IN",
+      "suspected_fraud": "yes",
+      "money_moved": "unknown",
+      "payment_channel": "unknown",
+      "credentials_exposed": "unknown",
+      "remote_access": "unknown",
+      "bank_reported": "no",
+      "official_reported": "no"
+    },
+    "amount_inr": null,
+    "origin": "synthetic_project_authored",
+    "is_real_incident": false,
+    "source_of_pattern": "S03",
+    "split": "development",
+    "expected_category_status": "provisional",
+    "expected_action_ids": [
+      "A01",
+      "A02",
+      "A03",
+      "A06",
+      "A07",
+      "A10"
+    ],
+    "expectation_method": "derived_from_proposed_rules_not_independent",
+    "review_status": "human_review_pending",
+    "forbidden_conclusions": [
+      "guaranteed_refund",
+      "proven_fraud",
+      "account_frozen_by_app",
+      "report_submitted_by_app"
+    ],
+    "completion_truth": "self_reported_only"
+  },
+  {
+    "case_id": "T016",
+    "category_id": "C06",
+    "variant": "attempt",
+    "narrative": "A caller claiming to be an investigator demands money to close a fabricated case. I have not sent money in this incident. I have not knowingly shared credentials. I did not allow remote device access.",
+    "facts": {
+      "country": "IN",
+      "suspected_fraud": "yes",
+      "money_moved": "no",
+      "payment_channel": "upi",
+      "credentials_exposed": "no",
+      "remote_access": "no",
+      "bank_reported": "no",
+      "official_reported": "no"
+    },
+    "amount_inr": 0,
+    "origin": "synthetic_project_authored",
+    "is_real_incident": false,
+    "source_of_pattern": "S03",
+    "split": "development",
+    "expected_category_status": "provisional",
+    "expected_action_ids": [
+      "A02",
+      "A03",
+      "A06",
+      "A07"
+    ],
+    "expectation_method": "derived_from_proposed_rules_not_independent",
+    "review_status": "human_review_pending",
+    "forbidden_conclusions": [
+      "guaranteed_refund",
+      "proven_fraud",
+      "account_frozen_by_app",
+      "report_submitted_by_app"
+    ],
+    "completion_truth": "self_reported_only"
+  },
+  {
+    "case_id": "T017",
+    "category_id": "C06",
+    "variant": "paid",
+    "narrative": "A caller claiming to be an investigator demands money to close a fabricated case. I transferred money and now suspect deception. I have not knowingly shared credentials. I did not allow remote device access.",
+    "facts": {
+      "country": "IN",
+      "suspected_fraud": "yes",
+      "money_moved": "yes",
+      "payment_channel": "upi",
+      "credentials_exposed": "no",
+      "remote_access": "no",
+      "bank_reported": "no",
+      "official_reported": "no"
+    },
+    "amount_inr": 3500,
+    "origin": "synthetic_project_authored",
+    "is_real_incident": false,
+    "source_of_pattern": "S03",
+    "split": "development",
+    "expected_category_status": "provisional",
+    "expected_action_ids": [
+      "A01",
+      "A02",
+      "A03",
+      "A08",
+      "A06",
+      "A07",
+      "A09"
+    ],
+    "expectation_method": "derived_from_proposed_rules_not_independent",
+    "review_status": "human_review_pending",
+    "forbidden_conclusions": [
+      "guaranteed_refund",
+      "proven_fraud",
+      "account_frozen_by_app",
+      "report_submitted_by_app"
+    ],
+    "completion_truth": "self_reported_only"
+  },
+  {
+    "case_id": "T018",
+    "category_id": "C06",
+    "variant": "uncertain",
+    "narrative": "A caller claiming to be an investigator demands money to close a fabricated case. I am unsure whether money left my account or whether access was exposed.",
+    "facts": {
+      "country": "IN",
+      "suspected_fraud": "yes",
+      "money_moved": "unknown",
+      "payment_channel": "unknown",
+      "credentials_exposed": "unknown",
+      "remote_access": "unknown",
+      "bank_reported": "no",
+      "official_reported": "no"
+    },
+    "amount_inr": null,
+    "origin": "synthetic_project_authored",
+    "is_real_incident": false,
+    "source_of_pattern": "S03",
+    "split": "development",
+    "expected_category_status": "provisional",
+    "expected_action_ids": [
+      "A01",
+      "A02",
+      "A03",
+      "A06",
+      "A07",
+      "A10"
+    ],
+    "expectation_method": "derived_from_proposed_rules_not_independent",
+    "review_status": "human_review_pending",
+    "forbidden_conclusions": [
+      "guaranteed_refund",
+      "proven_fraud",
+      "account_frozen_by_app",
+      "report_submitted_by_app"
+    ],
+    "completion_truth": "self_reported_only"
+  },
+  {
+    "case_id": "T019",
+    "category_id": "C07",
+    "variant": "attempt",
+    "narrative": "A recruiter asks for a deposit before I can withdraw earnings from online tasks. I have not sent money in this incident. I have not knowingly shared credentials. I did not allow remote device access.",
+    "facts": {
+      "country": "IN",
+      "suspected_fraud": "yes",
+      "money_moved": "no",
+      "payment_channel": "upi",
+      "credentials_exposed": "no",
+      "remote_access": "no",
+      "bank_reported": "no",
+      "official_reported": "no"
+    },
+    "amount_inr": 0,
+    "origin": "synthetic_project_authored",
+    "is_real_incident": false,
+    "source_of_pattern": "S03",
+    "split": "development",
+    "expected_category_status": "provisional",
+    "expected_action_ids": [
+      "A02",
+      "A03",
+      "A06",
+      "A07"
+    ],
+    "expectation_method": "derived_from_proposed_rules_not_independent",
+    "review_status": "human_review_pending",
+    "forbidden_conclusions": [
+      "guaranteed_refund",
+      "proven_fraud",
+      "account_frozen_by_app",
+      "report_submitted_by_app"
+    ],
+    "completion_truth": "self_reported_only"
+  },
+  {
+    "case_id": "T020",
+    "category_id": "C07",
+    "variant": "paid",
+    "narrative": "A recruiter asks for a deposit before I can withdraw earnings from online tasks. I transferred money and now suspect deception. I have not knowingly shared credentials. I did not allow remote device access.",
+    "facts": {
+      "country": "IN",
+      "suspected_fraud": "yes",
+      "money_moved": "yes",
+      "payment_channel": "upi",
+      "credentials_exposed": "no",
+      "remote_access": "no",
+      "bank_reported": "no",
+      "official_reported": "no"
+    },
+    "amount_inr": 4000,
+    "origin": "synthetic_project_authored",
+    "is_real_incident": false,
+    "source_of_pattern": "S03",
+    "split": "development",
+    "expected_category_status": "provisional",
+    "expected_action_ids": [
+      "A01",
+      "A02",
+      "A03",
+      "A08",
+      "A06",
+      "A07",
+      "A09"
+    ],
+    "expectation_method": "derived_from_proposed_rules_not_independent",
+    "review_status": "human_review_pending",
+    "forbidden_conclusions": [
+      "guaranteed_refund",
+      "proven_fraud",
+      "account_frozen_by_app",
+      "report_submitted_by_app"
+    ],
+    "completion_truth": "self_reported_only"
+  },
+  {
+    "case_id": "T021",
+    "category_id": "C07",
+    "variant": "uncertain",
+    "narrative": "A recruiter asks for a deposit before I can withdraw earnings from online tasks. I am unsure whether money left my account or whether access was exposed.",
+    "facts": {
+      "country": "IN",
+      "suspected_fraud": "yes",
+      "money_moved": "unknown",
+      "payment_channel": "unknown",
+      "credentials_exposed": "unknown",
+      "remote_access": "unknown",
+      "bank_reported": "no",
+      "official_reported": "no"
+    },
+    "amount_inr": null,
+    "origin": "synthetic_project_authored",
+    "is_real_incident": false,
+    "source_of_pattern": "S03",
+    "split": "development",
+    "expected_category_status": "provisional",
+    "expected_action_ids": [
+      "A01",
+      "A02",
+      "A03",
+      "A06",
+      "A07",
+      "A10"
+    ],
+    "expectation_method": "derived_from_proposed_rules_not_independent",
+    "review_status": "human_review_pending",
+    "forbidden_conclusions": [
+      "guaranteed_refund",
+      "proven_fraud",
+      "account_frozen_by_app",
+      "report_submitted_by_app"
+    ],
+    "completion_truth": "self_reported_only"
+  },
+  {
+    "case_id": "T022",
+    "category_id": "C08",
+    "variant": "attempt",
+    "narrative": "A message says I won a prize and must pay a release charge first. I have not sent money in this incident. I have not knowingly shared credentials. I did not allow remote device access.",
+    "facts": {
+      "country": "IN",
+      "suspected_fraud": "yes",
+      "money_moved": "no",
+      "payment_channel": "upi",
+      "credentials_exposed": "no",
+      "remote_access": "no",
+      "bank_reported": "no",
+      "official_reported": "no"
+    },
+    "amount_inr": 0,
+    "origin": "synthetic_project_authored",
+    "is_real_incident": false,
+    "source_of_pattern": "S03",
+    "split": "development",
+    "expected_category_status": "provisional",
+    "expected_action_ids": [
+      "A02",
+      "A03",
+      "A06",
+      "A07"
+    ],
+    "expectation_method": "derived_from_proposed_rules_not_independent",
+    "review_status": "human_review_pending",
+    "forbidden_conclusions": [
+      "guaranteed_refund",
+      "proven_fraud",
+      "account_frozen_by_app",
+      "report_submitted_by_app"
+    ],
+    "completion_truth": "self_reported_only"
+  },
+  {
+    "case_id": "T023",
+    "category_id": "C08",
+    "variant": "paid",
+    "narrative": "A message says I won a prize and must pay a release charge first. I transferred money and now suspect deception. I have not knowingly shared credentials. I did not allow remote device access.",
+    "facts": {
+      "country": "IN",
+      "suspected_fraud": "yes",
+      "money_moved": "yes",
+      "payment_channel": "upi",
+      "credentials_exposed": "no",
+      "remote_access": "no",
+      "bank_reported": "no",
+      "official_reported": "no"
+    },
+    "amount_inr": 4500,
+    "origin": "synthetic_project_authored",
+    "is_real_incident": false,
+    "source_of_pattern": "S03",
+    "split": "development",
+    "expected_category_status": "provisional",
+    "expected_action_ids": [
+      "A01",
+      "A02",
+      "A03",
+      "A08",
+      "A06",
+      "A07",
+      "A09"
+    ],
+    "expectation_method": "derived_from_proposed_rules_not_independent",
+    "review_status": "human_review_pending",
+    "forbidden_conclusions": [
+      "guaranteed_refund",
+      "proven_fraud",
+      "account_frozen_by_app",
+      "report_submitted_by_app"
+    ],
+    "completion_truth": "self_reported_only"
+  },
+  {
+    "case_id": "T024",
+    "category_id": "C08",
+    "variant": "uncertain",
+    "narrative": "A message says I won a prize and must pay a release charge first. I am unsure whether money left my account or whether access was exposed.",
+    "facts": {
+      "country": "IN",
+      "suspected_fraud": "yes",
+      "money_moved": "unknown",
+      "payment_channel": "unknown",
+      "credentials_exposed": "unknown",
+      "remote_access": "unknown",
+      "bank_reported": "no",
+      "official_reported": "no"
+    },
+    "amount_inr": null,
+    "origin": "synthetic_project_authored",
+    "is_real_incident": false,
+    "source_of_pattern": "S03",
+    "split": "development",
+    "expected_category_status": "provisional",
+    "expected_action_ids": [
+      "A01",
+      "A02",
+      "A03",
+      "A06",
+      "A07",
+      "A10"
+    ],
+    "expectation_method": "derived_from_proposed_rules_not_independent",
+    "review_status": "human_review_pending",
+    "forbidden_conclusions": [
+      "guaranteed_refund",
+      "proven_fraud",
+      "account_frozen_by_app",
+      "report_submitted_by_app"
+    ],
+    "completion_truth": "self_reported_only"
+  },
+  {
+    "case_id": "T025",
+    "category_id": "C09",
+    "variant": "attempt",
+    "narrative": "An email resembling my supplier asks me to use a different bank account for an invoice. I have not sent money in this incident. I have not knowingly shared credentials. I did not allow remote device access.",
+    "facts": {
+      "country": "IN",
+      "suspected_fraud": "yes",
+      "money_moved": "no",
+      "payment_channel": "bank_transfer",
+      "credentials_exposed": "no",
+      "remote_access": "no",
+      "bank_reported": "no",
+      "official_reported": "no"
+    },
+    "amount_inr": 0,
+    "origin": "synthetic_project_authored",
+    "is_real_incident": false,
+    "source_of_pattern": "S03",
+    "split": "development",
+    "expected_category_status": "provisional",
+    "expected_action_ids": [
+      "A02",
+      "A03",
+      "A06",
+      "A07"
+    ],
+    "expectation_method": "derived_from_proposed_rules_not_independent",
+    "review_status": "human_review_pending",
+    "forbidden_conclusions": [
+      "guaranteed_refund",
+      "proven_fraud",
+      "account_frozen_by_app",
+      "report_submitted_by_app"
+    ],
+    "completion_truth": "self_reported_only"
+  },
+  {
+    "case_id": "T026",
+    "category_id": "C09",
+    "variant": "paid",
+    "narrative": "An email resembling my supplier asks me to use a different bank account for an invoice. I transferred money and now suspect deception. I have not knowingly shared credentials. I did not allow remote device access.",
+    "facts": {
+      "country": "IN",
+      "suspected_fraud": "yes",
+      "money_moved": "yes",
+      "payment_channel": "bank_transfer",
+      "credentials_exposed": "no",
+      "remote_access": "no",
+      "bank_reported": "no",
+      "official_reported": "no"
+    },
+    "amount_inr": 5000,
+    "origin": "synthetic_project_authored",
+    "is_real_incident": false,
+    "source_of_pattern": "S03",
+    "split": "development",
+    "expected_category_status": "provisional",
+    "expected_action_ids": [
+      "A01",
+      "A02",
+      "A03",
+      "A06",
+      "A07",
+      "A09"
+    ],
+    "expectation_method": "derived_from_proposed_rules_not_independent",
+    "review_status": "human_review_pending",
+    "forbidden_conclusions": [
+      "guaranteed_refund",
+      "proven_fraud",
+      "account_frozen_by_app",
+      "report_submitted_by_app"
+    ],
+    "completion_truth": "self_reported_only"
+  },
+  {
+    "case_id": "T027",
+    "category_id": "C09",
+    "variant": "uncertain",
+    "narrative": "An email resembling my supplier asks me to use a different bank account for an invoice. I am unsure whether money left my account or whether access was exposed.",
+    "facts": {
+      "country": "IN",
+      "suspected_fraud": "yes",
+      "money_moved": "unknown",
+      "payment_channel": "unknown",
+      "credentials_exposed": "unknown",
+      "remote_access": "unknown",
+      "bank_reported": "no",
+      "official_reported": "no"
+    },
+    "amount_inr": null,
+    "origin": "synthetic_project_authored",
+    "is_real_incident": false,
+    "source_of_pattern": "S03",
+    "split": "development",
+    "expected_category_status": "provisional",
+    "expected_action_ids": [
+      "A01",
+      "A02",
+      "A03",
+      "A06",
+      "A07",
+      "A10"
+    ],
+    "expectation_method": "derived_from_proposed_rules_not_independent",
+    "review_status": "human_review_pending",
+    "forbidden_conclusions": [
+      "guaranteed_refund",
+      "proven_fraud",
+      "account_frozen_by_app",
+      "report_submitted_by_app"
+    ],
+    "completion_truth": "self_reported_only"
+  },
+  {
+    "case_id": "T028",
+    "category_id": "C10",
+    "variant": "attempt",
+    "narrative": "After an earlier scam, a stranger claims they can recover everything if I pay an advance fee. I have not sent money in this incident. I have not knowingly shared credentials. I did not allow remote device access.",
+    "facts": {
+      "country": "IN",
+      "suspected_fraud": "yes",
+      "money_moved": "no",
+      "payment_channel": "upi",
+      "credentials_exposed": "no",
+      "remote_access": "no",
+      "bank_reported": "no",
+      "official_reported": "no"
+    },
+    "amount_inr": 0,
+    "origin": "synthetic_project_authored",
+    "is_real_incident": false,
+    "source_of_pattern": "S03",
+    "split": "development",
+    "expected_category_status": "provisional",
+    "expected_action_ids": [
+      "A02",
+      "A03",
+      "A06",
+      "A07"
+    ],
+    "expectation_method": "derived_from_proposed_rules_not_independent",
+    "review_status": "human_review_pending",
+    "forbidden_conclusions": [
+      "guaranteed_refund",
+      "proven_fraud",
+      "account_frozen_by_app",
+      "report_submitted_by_app"
+    ],
+    "completion_truth": "self_reported_only"
+  },
+  {
+    "case_id": "T029",
+    "category_id": "C10",
+    "variant": "paid",
+    "narrative": "After an earlier scam, a stranger claims they can recover everything if I pay an advance fee. I transferred money and now suspect deception. I have not knowingly shared credentials. I did not allow remote device access.",
+    "facts": {
+      "country": "IN",
+      "suspected_fraud": "yes",
+      "money_moved": "yes",
+      "payment_channel": "upi",
+      "credentials_exposed": "no",
+      "remote_access": "no",
+      "bank_reported": "no",
+      "official_reported": "no"
+    },
+    "amount_inr": 5500,
+    "origin": "synthetic_project_authored",
+    "is_real_incident": false,
+    "source_of_pattern": "S03",
+    "split": "development",
+    "expected_category_status": "provisional",
+    "expected_action_ids": [
+      "A01",
+      "A02",
+      "A03",
+      "A08",
+      "A06",
+      "A07",
+      "A09"
+    ],
+    "expectation_method": "derived_from_proposed_rules_not_independent",
+    "review_status": "human_review_pending",
+    "forbidden_conclusions": [
+      "guaranteed_refund",
+      "proven_fraud",
+      "account_frozen_by_app",
+      "report_submitted_by_app"
+    ],
+    "completion_truth": "self_reported_only"
+  },
+  {
+    "case_id": "T030",
+    "category_id": "C10",
+    "variant": "uncertain",
+    "narrative": "After an earlier scam, a stranger claims they can recover everything if I pay an advance fee. I am unsure whether money left my account or whether access was exposed.",
+    "facts": {
+      "country": "IN",
+      "suspected_fraud": "yes",
+      "money_moved": "unknown",
+      "payment_channel": "unknown",
+      "credentials_exposed": "unknown",
+      "remote_access": "unknown",
+      "bank_reported": "no",
+      "official_reported": "no"
+    },
+    "amount_inr": null,
+    "origin": "synthetic_project_authored",
+    "is_real_incident": false,
+    "source_of_pattern": "S03",
+    "split": "development",
+    "expected_category_status": "provisional",
+    "expected_action_ids": [
+      "A01",
+      "A02",
+      "A03",
+      "A06",
+      "A07",
+      "A10"
+    ],
+    "expectation_method": "derived_from_proposed_rules_not_independent",
+    "review_status": "human_review_pending",
+    "forbidden_conclusions": [
+      "guaranteed_refund",
+      "proven_fraud",
+      "account_frozen_by_app",
+      "report_submitted_by_app"
+    ],
+    "completion_truth": "self_reported_only"
+  },
+  {
+    "case_id": "T031",
+    "category_id": "C11",
+    "variant": "attempt",
+    "narrative": "A disaster-relief fundraiser gives personal payment details that I cannot verify. I have not sent money in this incident. I have not knowingly shared credentials. I did not allow remote device access.",
+    "facts": {
+      "country": "IN",
+      "suspected_fraud": "yes",
+      "money_moved": "no",
+      "payment_channel": "upi",
+      "credentials_exposed": "no",
+      "remote_access": "no",
+      "bank_reported": "no",
+      "official_reported": "no"
+    },
+    "amount_inr": 0,
+    "origin": "synthetic_project_authored",
+    "is_real_incident": false,
+    "source_of_pattern": "S03",
+    "split": "development",
+    "expected_category_status": "provisional",
+    "expected_action_ids": [
+      "A02",
+      "A03",
+      "A06",
+      "A07"
+    ],
+    "expectation_method": "derived_from_proposed_rules_not_independent",
+    "review_status": "human_review_pending",
+    "forbidden_conclusions": [
+      "guaranteed_refund",
+      "proven_fraud",
+      "account_frozen_by_app",
+      "report_submitted_by_app"
+    ],
+    "completion_truth": "self_reported_only"
+  },
+  {
+    "case_id": "T032",
+    "category_id": "C11",
+    "variant": "paid",
+    "narrative": "A disaster-relief fundraiser gives personal payment details that I cannot verify. I transferred money and now suspect deception. I have not knowingly shared credentials. I did not allow remote device access.",
+    "facts": {
+      "country": "IN",
+      "suspected_fraud": "yes",
+      "money_moved": "yes",
+      "payment_channel": "upi",
+      "credentials_exposed": "no",
+      "remote_access": "no",
+      "bank_reported": "no",
+      "official_reported": "no"
+    },
+    "amount_inr": 6000,
+    "origin": "synthetic_project_authored",
+    "is_real_incident": false,
+    "source_of_pattern": "S03",
+    "split": "development",
+    "expected_category_status": "provisional",
+    "expected_action_ids": [
+      "A01",
+      "A02",
+      "A03",
+      "A08",
+      "A06",
+      "A07",
+      "A09"
+    ],
+    "expectation_method": "derived_from_proposed_rules_not_independent",
+    "review_status": "human_review_pending",
+    "forbidden_conclusions": [
+      "guaranteed_refund",
+      "proven_fraud",
+      "account_frozen_by_app",
+      "report_submitted_by_app"
+    ],
+    "completion_truth": "self_reported_only"
+  },
+  {
+    "case_id": "T033",
+    "category_id": "C11",
+    "variant": "uncertain",
+    "narrative": "A disaster-relief fundraiser gives personal payment details that I cannot verify. I am unsure whether money left my account or whether access was exposed.",
+    "facts": {
+      "country": "IN",
+      "suspected_fraud": "yes",
+      "money_moved": "unknown",
+      "payment_channel": "unknown",
+      "credentials_exposed": "unknown",
+      "remote_access": "unknown",
+      "bank_reported": "no",
+      "official_reported": "no"
+    },
+    "amount_inr": null,
+    "origin": "synthetic_project_authored",
+    "is_real_incident": false,
+    "source_of_pattern": "S03",
+    "split": "development",
+    "expected_category_status": "provisional",
+    "expected_action_ids": [
+      "A01",
+      "A02",
+      "A03",
+      "A06",
+      "A07",
+      "A10"
+    ],
+    "expectation_method": "derived_from_proposed_rules_not_independent",
+    "review_status": "human_review_pending",
+    "forbidden_conclusions": [
+      "guaranteed_refund",
+      "proven_fraud",
+      "account_frozen_by_app",
+      "report_submitted_by_app"
+    ],
+    "completion_truth": "self_reported_only"
+  },
+  {
+    "case_id": "T034",
+    "category_id": "C12",
+    "variant": "attempt",
+    "narrative": "A betting platform demands an extra deposit before releasing my supposed winnings. I have not sent money in this incident. I have not knowingly shared credentials. I did not allow remote device access.",
+    "facts": {
+      "country": "IN",
+      "suspected_fraud": "yes",
+      "money_moved": "no",
+      "payment_channel": "upi",
+      "credentials_exposed": "no",
+      "remote_access": "no",
+      "bank_reported": "no",
+      "official_reported": "no"
+    },
+    "amount_inr": 0,
+    "origin": "synthetic_project_authored",
+    "is_real_incident": false,
+    "source_of_pattern": "S03",
+    "split": "development",
+    "expected_category_status": "provisional",
+    "expected_action_ids": [
+      "A02",
+      "A03",
+      "A06",
+      "A07"
+    ],
+    "expectation_method": "derived_from_proposed_rules_not_independent",
+    "review_status": "human_review_pending",
+    "forbidden_conclusions": [
+      "guaranteed_refund",
+      "proven_fraud",
+      "account_frozen_by_app",
+      "report_submitted_by_app"
+    ],
+    "completion_truth": "self_reported_only"
+  },
+  {
+    "case_id": "T035",
+    "category_id": "C12",
+    "variant": "paid",
+    "narrative": "A betting platform demands an extra deposit before releasing my supposed winnings. I transferred money and now suspect deception. I have not knowingly shared credentials. I did not allow remote device access.",
+    "facts": {
+      "country": "IN",
+      "suspected_fraud": "yes",
+      "money_moved": "yes",
+      "payment_channel": "upi",
+      "credentials_exposed": "no",
+      "remote_access": "no",
+      "bank_reported": "no",
+      "official_reported": "no"
+    },
+    "amount_inr": 6500,
+    "origin": "synthetic_project_authored",
+    "is_real_incident": false,
+    "source_of_pattern": "S03",
+    "split": "development",
+    "expected_category_status": "provisional",
+    "expected_action_ids": [
+      "A01",
+      "A02",
+      "A03",
+      "A08",
+      "A06",
+      "A07",
+      "A09"
+    ],
+    "expectation_method": "derived_from_proposed_rules_not_independent",
+    "review_status": "human_review_pending",
+    "forbidden_conclusions": [
+      "guaranteed_refund",
+      "proven_fraud",
+      "account_frozen_by_app",
+      "report_submitted_by_app"
+    ],
+    "completion_truth": "self_reported_only"
+  },
+  {
+    "case_id": "T036",
+    "category_id": "C12",
+    "variant": "uncertain",
+    "narrative": "A betting platform demands an extra deposit before releasing my supposed winnings. I am unsure whether money left my account or whether access was exposed.",
+    "facts": {
+      "country": "IN",
+      "suspected_fraud": "yes",
+      "money_moved": "unknown",
+      "payment_channel": "unknown",
+      "credentials_exposed": "unknown",
+      "remote_access": "unknown",
+      "bank_reported": "no",
+      "official_reported": "no"
+    },
+    "amount_inr": null,
+    "origin": "synthetic_project_authored",
+    "is_real_incident": false,
+    "source_of_pattern": "S03",
+    "split": "development",
+    "expected_category_status": "provisional",
+    "expected_action_ids": [
+      "A01",
+      "A02",
+      "A03",
+      "A06",
+      "A07",
+      "A10"
+    ],
+    "expectation_method": "derived_from_proposed_rules_not_independent",
+    "review_status": "human_review_pending",
+    "forbidden_conclusions": [
+      "guaranteed_refund",
+      "proven_fraud",
+      "account_frozen_by_app",
+      "report_submitted_by_app"
+    ],
+    "completion_truth": "self_reported_only"
+  },
+  {
+    "case_id": "T037",
+    "category_id": "C13",
+    "variant": "debit",
+    "narrative": "My bank statement shows a card debit I do not recognise. I have checked that this is an actual debit.",
+    "facts": {
+      "country": "IN",
+      "suspected_fraud": "yes",
+      "money_moved": "yes",
+      "payment_channel": "card",
+      "credentials_exposed": "no",
+      "remote_access": "no",
+      "bank_reported": "no",
+      "official_reported": "no"
+    },
+    "amount_inr": 3200,
+    "origin": "synthetic_project_authored",
+    "is_real_incident": false,
+    "source_of_pattern": "S02",
+    "split": "development",
+    "expected_category_status": "provisional",
+    "expected_action_ids": [
+      "A01",
+      "A02",
+      "A03",
+      "A06",
+      "A07",
+      "A09"
+    ],
+    "expectation_method": "derived_from_proposed_rules_not_independent",
+    "review_status": "human_review_pending",
+    "forbidden_conclusions": [
+      "guaranteed_refund",
+      "proven_fraud",
+      "account_frozen_by_app",
+      "report_submitted_by_app"
+    ],
+    "completion_truth": "self_reported_only"
+  },
+  {
+    "case_id": "T038",
+    "category_id": "C13",
+    "variant": "alert_only",
+    "narrative": "I received a payment alert but have not checked whether my account was debited.",
+    "facts": {
+      "country": "IN",
+      "suspected_fraud": "yes",
+      "money_moved": "unknown",
+      "payment_channel": "unknown",
+      "credentials_exposed": "no",
+      "remote_access": "no",
+      "bank_reported": "no",
+      "official_reported": "no"
+    },
+    "amount_inr": null,
+    "origin": "synthetic_project_authored",
+    "is_real_incident": false,
+    "source_of_pattern": "S02",
+    "split": "development",
+    "expected_category_status": "provisional",
+    "expected_action_ids": [
+      "A01",
+      "A02",
+      "A03",
+      "A06",
+      "A07",
+      "A10"
+    ],
+    "expectation_method": "derived_from_proposed_rules_not_independent",
+    "review_status": "human_review_pending",
+    "forbidden_conclusions": [
+      "guaranteed_refund",
+      "proven_fraud",
+      "account_frozen_by_app",
+      "report_submitted_by_app"
+    ],
+    "completion_truth": "self_reported_only"
+  },
+  {
+    "case_id": "T039",
+    "category_id": "C13",
+    "variant": "already_reported",
+    "narrative": "My bank statement shows a card debit I do not recognise. I have reported it to both the bank and official reporting channel.",
+    "facts": {
+      "country": "IN",
+      "suspected_fraud": "yes",
+      "money_moved": "yes",
+      "payment_channel": "card",
+      "credentials_exposed": "no",
+      "remote_access": "no",
+      "bank_reported": "yes",
+      "official_reported": "yes"
+    },
+    "amount_inr": 3200,
+    "origin": "synthetic_project_authored",
+    "is_real_incident": false,
+    "source_of_pattern": "S02",
+    "split": "development",
+    "expected_category_status": "provisional",
+    "expected_action_ids": [
+      "A03",
+      "A06",
+      "A07",
+      "A09"
+    ],
+    "expectation_method": "derived_from_proposed_rules_not_independent",
+    "review_status": "human_review_pending",
+    "forbidden_conclusions": [
+      "guaranteed_refund",
+      "proven_fraud",
+      "account_frozen_by_app",
+      "report_submitted_by_app"
+    ],
+    "completion_truth": "self_reported_only"
+  },
+  {
+    "case_id": "T040",
+    "category_id": "C14",
+    "variant": "attempt",
+    "narrative": "Someone claiming to provide support asked me to install an app and let them control my screen. I have not sent money in this incident. I have not knowingly shared credentials. I allowed remote device access.",
+    "facts": {
+      "country": "IN",
+      "suspected_fraud": "yes",
+      "money_moved": "no",
+      "payment_channel": "upi",
+      "credentials_exposed": "no",
+      "remote_access": "yes",
+      "bank_reported": "no",
+      "official_reported": "no"
+    },
+    "amount_inr": 0,
+    "origin": "synthetic_project_authored",
+    "is_real_incident": false,
+    "source_of_pattern": "S05",
+    "split": "development",
+    "expected_category_status": "provisional",
+    "expected_action_ids": [
+      "A02",
+      "A03",
+      "A05",
+      "A06",
+      "A07"
+    ],
+    "expectation_method": "derived_from_proposed_rules_not_independent",
+    "review_status": "human_review_pending",
+    "forbidden_conclusions": [
+      "guaranteed_refund",
+      "proven_fraud",
+      "account_frozen_by_app",
+      "report_submitted_by_app"
+    ],
+    "completion_truth": "self_reported_only"
+  },
+  {
+    "case_id": "T041",
+    "category_id": "C14",
+    "variant": "paid",
+    "narrative": "Someone claiming to provide support asked me to install an app and let them control my screen. I transferred money and now suspect deception. I have not knowingly shared credentials. I allowed remote device access.",
+    "facts": {
+      "country": "IN",
+      "suspected_fraud": "yes",
+      "money_moved": "yes",
+      "payment_channel": "upi",
+      "credentials_exposed": "no",
+      "remote_access": "yes",
+      "bank_reported": "no",
+      "official_reported": "no"
+    },
+    "amount_inr": 7500,
+    "origin": "synthetic_project_authored",
+    "is_real_incident": false,
+    "source_of_pattern": "S05",
+    "split": "development",
+    "expected_category_status": "provisional",
+    "expected_action_ids": [
+      "A01",
+      "A02",
+      "A03",
+      "A05",
+      "A08",
+      "A06",
+      "A07",
+      "A09"
+    ],
+    "expectation_method": "derived_from_proposed_rules_not_independent",
+    "review_status": "human_review_pending",
+    "forbidden_conclusions": [
+      "guaranteed_refund",
+      "proven_fraud",
+      "account_frozen_by_app",
+      "report_submitted_by_app"
+    ],
+    "completion_truth": "self_reported_only"
+  },
+  {
+    "case_id": "T042",
+    "category_id": "C14",
+    "variant": "uncertain",
+    "narrative": "Someone claiming to provide support asked me to install an app and let them control my screen. I am unsure whether money left my account or whether access was exposed.",
+    "facts": {
+      "country": "IN",
+      "suspected_fraud": "yes",
+      "money_moved": "unknown",
+      "payment_channel": "unknown",
+      "credentials_exposed": "unknown",
+      "remote_access": "unknown",
+      "bank_reported": "no",
+      "official_reported": "no"
+    },
+    "amount_inr": null,
+    "origin": "synthetic_project_authored",
+    "is_real_incident": false,
+    "source_of_pattern": "S05",
+    "split": "development",
+    "expected_category_status": "provisional",
+    "expected_action_ids": [
+      "A01",
+      "A02",
+      "A03",
+      "A06",
+      "A07",
+      "A10"
+    ],
+    "expectation_method": "derived_from_proposed_rules_not_independent",
+    "review_status": "human_review_pending",
+    "forbidden_conclusions": [
+      "guaranteed_refund",
+      "proven_fraud",
+      "account_frozen_by_app",
+      "report_submitted_by_app"
+    ],
+    "completion_truth": "self_reported_only"
+  },
+  {
+    "case_id": "T043",
+    "category_id": "C15",
+    "variant": "pending",
+    "narrative": "My payment is pending and the merchant says they have not received it; there are no other warning signs. The app shows pending.",
+    "facts": {
+      "country": "IN",
+      "suspected_fraud": "no",
+      "money_moved": "yes",
+      "payment_channel": "upi",
+      "credentials_exposed": "no",
+      "remote_access": "no",
+      "bank_reported": "no",
+      "official_reported": "no"
+    },
+    "amount_inr": 1200,
+    "origin": "synthetic_project_authored",
+    "is_real_incident": false,
+    "source_of_pattern": null,
+    "split": "development",
+    "expected_category_status": "no_fraud_established",
+    "expected_action_ids": [
+      "A11",
+      "A06"
+    ],
+    "expectation_method": "derived_from_proposed_rules_not_independent",
+    "review_status": "human_review_pending",
+    "forbidden_conclusions": [
+      "guaranteed_refund",
+      "proven_fraud",
+      "account_frozen_by_app",
+      "report_submitted_by_app"
+    ],
+    "completion_truth": "self_reported_only"
+  },
+  {
+    "case_id": "T044",
+    "category_id": "C15",
+    "variant": "refund_delay",
+    "narrative": "A known shop acknowledged my return, but its refund has not arrived. I have no other scam indicators.",
+    "facts": {
+      "country": "IN",
+      "suspected_fraud": "no",
+      "money_moved": "yes",
+      "payment_channel": "card",
+      "credentials_exposed": "no",
+      "remote_access": "no",
+      "bank_reported": "no",
+      "official_reported": "no"
+    },
+    "amount_inr": 2300,
+    "origin": "synthetic_project_authored",
+    "is_real_incident": false,
+    "source_of_pattern": null,
+    "split": "development",
+    "expected_category_status": "no_fraud_established",
+    "expected_action_ids": [
+      "A11",
+      "A06"
+    ],
+    "expectation_method": "derived_from_proposed_rules_not_independent",
+    "review_status": "human_review_pending",
+    "forbidden_conclusions": [
+      "guaranteed_refund",
+      "proven_fraud",
+      "account_frozen_by_app",
+      "report_submitted_by_app"
+    ],
+    "completion_truth": "self_reported_only"
+  },
+  {
+    "case_id": "T045",
+    "category_id": "C15",
+    "variant": "unknown",
+    "narrative": "A debit may be a subscription renewal. I need to check the description before deciding.",
+    "facts": {
+      "country": "IN",
+      "suspected_fraud": "unknown",
+      "money_moved": "yes",
+      "payment_channel": "card",
+      "credentials_exposed": "no",
+      "remote_access": "no",
+      "bank_reported": "no",
+      "official_reported": "no"
+    },
+    "amount_inr": 499,
+    "origin": "synthetic_project_authored",
+    "is_real_incident": false,
+    "source_of_pattern": null,
+    "split": "development",
+    "expected_category_status": "no_fraud_established",
+    "expected_action_ids": [
+      "A06",
+      "A10"
+    ],
+    "expectation_method": "derived_from_proposed_rules_not_independent",
+    "review_status": "human_review_pending",
+    "forbidden_conclusions": [
+      "guaranteed_refund",
+      "proven_fraud",
+      "account_frozen_by_app",
+      "report_submitted_by_app"
+    ],
+    "completion_truth": "self_reported_only"
+  },
+  {
+    "case_id": "T046",
+    "category_id": "C16",
+    "variant": "unknown",
+    "narrative": "Something seems wrong with a payment, but I cannot explain the sequence yet.",
+    "facts": {
+      "country": "IN",
+      "suspected_fraud": "unknown",
+      "money_moved": "unknown",
+      "payment_channel": "unknown",
+      "credentials_exposed": "unknown",
+      "remote_access": "unknown",
+      "bank_reported": "no",
+      "official_reported": "no"
+    },
+    "amount_inr": null,
+    "origin": "synthetic_project_authored",
+    "is_real_incident": false,
+    "source_of_pattern": null,
+    "split": "development",
+    "expected_category_status": "needs_clarification",
+    "expected_action_ids": [
+      "A06",
+      "A10"
+    ],
+    "expectation_method": "derived_from_proposed_rules_not_independent",
+    "review_status": "human_review_pending",
+    "forbidden_conclusions": [
+      "guaranteed_refund",
+      "proven_fraud",
+      "account_frozen_by_app",
+      "report_submitted_by_app"
+    ],
+    "completion_truth": "self_reported_only"
+  },
+  {
+    "case_id": "T047",
+    "category_id": "C16",
+    "variant": "mixed",
+    "narrative": "I paid a supposed helper and then allowed them to view my screen. I cannot identify the scam family.",
+    "facts": {
+      "country": "IN",
+      "suspected_fraud": "yes",
+      "money_moved": "yes",
+      "payment_channel": "upi",
+      "credentials_exposed": "unknown",
+      "remote_access": "yes",
+      "bank_reported": "no",
+      "official_reported": "no"
+    },
+    "amount_inr": 1800,
+    "origin": "synthetic_project_authored",
+    "is_real_incident": false,
+    "source_of_pattern": null,
+    "split": "development",
+    "expected_category_status": "needs_clarification",
+    "expected_action_ids": [
+      "A01",
+      "A02",
+      "A03",
+      "A05",
+      "A08",
+      "A06",
+      "A07",
+      "A10",
+      "A09"
+    ],
+    "expectation_method": "derived_from_proposed_rules_not_independent",
+    "review_status": "human_review_pending",
+    "forbidden_conclusions": [
+      "guaranteed_refund",
+      "proven_fraud",
+      "account_frozen_by_app",
+      "report_submitted_by_app"
+    ],
+    "completion_truth": "self_reported_only"
+  },
+  {
+    "case_id": "T048",
+    "category_id": "C16",
+    "variant": "missing_amount",
+    "narrative": "I know a deceptive transfer occurred, but I cannot remember the amount or payment method.",
+    "facts": {
+      "country": "IN",
+      "suspected_fraud": "yes",
+      "money_moved": "yes",
+      "payment_channel": "unknown",
+      "credentials_exposed": "no",
+      "remote_access": "no",
+      "bank_reported": "no",
+      "official_reported": "no"
+    },
+    "amount_inr": null,
+    "origin": "synthetic_project_authored",
+    "is_real_incident": false,
+    "source_of_pattern": null,
+    "split": "development",
+    "expected_category_status": "needs_clarification",
+    "expected_action_ids": [
+      "A01",
+      "A02",
+      "A03",
+      "A06",
+      "A07",
+      "A10",
+      "A09"
+    ],
+    "expectation_method": "derived_from_proposed_rules_not_independent",
+    "review_status": "human_review_pending",
+    "forbidden_conclusions": [
+      "guaranteed_refund",
+      "proven_fraud",
+      "account_frozen_by_app",
+      "report_submitted_by_app"
+    ],
+    "completion_truth": "self_reported_only"
+  },
+  {
+    "case_id": "T049",
+    "category_id": "C16",
+    "variant": "foreign_country",
+    "narrative": "I am in Australia and need local reporting guidance.",
+    "facts": {
+      "country": "OTHER",
+      "suspected_fraud": "yes",
+      "money_moved": "yes",
+      "payment_channel": "upi",
+      "credentials_exposed": "no",
+      "remote_access": "no",
+      "bank_reported": "no",
+      "official_reported": "no"
+    },
+    "amount_inr": 2500,
+    "origin": "synthetic_project_authored",
+    "is_real_incident": false,
+    "source_of_pattern": null,
+    "split": "held_out_boundary",
+    "expected_category_status": "needs_clarification",
+    "expected_action_ids": [
+      "A12"
+    ],
+    "expectation_method": "hand_specified_against_routing_contract",
+    "review_status": "human_review_pending",
+    "forbidden_conclusions": [
+      "guaranteed_refund",
+      "proven_fraud",
+      "account_frozen_by_app",
+      "report_submitted_by_app"
+    ],
+    "completion_truth": "self_reported_only"
+  },
+  {
+    "case_id": "T050",
+    "category_id": "C15",
+    "variant": "negative_control",
+    "narrative": "A legitimate merchant confirms my payment is pending. I have no evidence of deception.",
+    "facts": {
+      "country": "IN",
+      "suspected_fraud": "no",
+      "money_moved": "yes",
+      "payment_channel": "upi",
+      "credentials_exposed": "no",
+      "remote_access": "no",
+      "bank_reported": "no",
+      "official_reported": "no"
+    },
+    "amount_inr": 100,
+    "origin": "synthetic_project_authored",
+    "is_real_incident": false,
+    "source_of_pattern": null,
+    "split": "held_out_boundary",
+    "expected_category_status": "no_fraud_established",
+    "expected_action_ids": [
+      "A11",
+      "A06"
+    ],
+    "expectation_method": "hand_specified_against_routing_contract",
+    "review_status": "human_review_pending",
+    "forbidden_conclusions": [
+      "guaranteed_refund",
+      "proven_fraud",
+      "account_frozen_by_app",
+      "report_submitted_by_app"
+    ],
+    "completion_truth": "self_reported_only"
+  },
+  {
+    "case_id": "T051",
+    "category_id": "C01",
+    "variant": "exposure_no_payment",
+    "narrative": "I entered my password on a deceptive page, but no money has moved.",
+    "facts": {
+      "country": "IN",
+      "suspected_fraud": "yes",
+      "money_moved": "no",
+      "payment_channel": "upi",
+      "credentials_exposed": "yes",
+      "remote_access": "no",
+      "bank_reported": "no",
+      "official_reported": "no"
+    },
+    "amount_inr": 0,
+    "origin": "synthetic_project_authored",
+    "is_real_incident": false,
+    "source_of_pattern": "S03",
+    "split": "held_out_boundary",
+    "expected_category_status": "provisional",
+    "expected_action_ids": [
+      "A02",
+      "A03",
+      "A04",
+      "A06",
+      "A07"
+    ],
+    "expectation_method": "hand_specified_against_routing_contract",
+    "review_status": "human_review_pending",
+    "forbidden_conclusions": [
+      "guaranteed_refund",
+      "proven_fraud",
+      "account_frozen_by_app",
+      "report_submitted_by_app"
+    ],
+    "completion_truth": "self_reported_only"
+  },
+  {
+    "case_id": "T052",
+    "category_id": "C05",
+    "variant": "both_reported",
+    "narrative": "I paid a deceptive seller and have already contacted my bank and reported officially.",
+    "facts": {
+      "country": "IN",
+      "suspected_fraud": "yes",
+      "money_moved": "yes",
+      "payment_channel": "upi",
+      "credentials_exposed": "no",
+      "remote_access": "no",
+      "bank_reported": "yes",
+      "official_reported": "yes"
+    },
+    "amount_inr": 900,
+    "origin": "synthetic_project_authored",
+    "is_real_incident": false,
+    "source_of_pattern": "S03",
+    "split": "held_out_boundary",
+    "expected_category_status": "provisional",
+    "expected_action_ids": [
+      "A03",
+      "A08",
+      "A06",
+      "A07",
+      "A09"
+    ],
+    "expectation_method": "hand_specified_against_routing_contract",
+    "review_status": "human_review_pending",
+    "forbidden_conclusions": [
+      "guaranteed_refund",
+      "proven_fraud",
+      "account_frozen_by_app",
+      "report_submitted_by_app"
+    ],
+    "completion_truth": "self_reported_only"
+  },
+  {
+    "case_id": "T053",
+    "category_id": "C16",
+    "variant": "missing_all",
+    "narrative": "I cannot yet confirm if this is fraud or whether money moved.",
+    "facts": {
+      "country": "IN",
+      "suspected_fraud": "unknown",
+      "money_moved": "unknown",
+      "payment_channel": "unknown",
+      "credentials_exposed": "unknown",
+      "remote_access": "unknown",
+      "bank_reported": "no",
+      "official_reported": "no"
+    },
+    "amount_inr": null,
+    "origin": "synthetic_project_authored",
+    "is_real_incident": false,
+    "source_of_pattern": null,
+    "split": "held_out_boundary",
+    "expected_category_status": "needs_clarification",
+    "expected_action_ids": [
+      "A06",
+      "A10"
+    ],
+    "expectation_method": "hand_specified_against_routing_contract",
+    "review_status": "human_review_pending",
+    "forbidden_conclusions": [
+      "guaranteed_refund",
+      "proven_fraud",
+      "account_frozen_by_app",
+      "report_submitted_by_app"
+    ],
+    "completion_truth": "self_reported_only"
+  },
+  {
+    "case_id": "T054",
+    "category_id": "C14",
+    "variant": "overlap",
+    "narrative": "I sent money through UPI, shared a password and enabled remote access for someone I now suspect.",
+    "facts": {
+      "country": "IN",
+      "suspected_fraud": "yes",
+      "money_moved": "yes",
+      "payment_channel": "upi",
+      "credentials_exposed": "yes",
+      "remote_access": "yes",
+      "bank_reported": "no",
+      "official_reported": "no"
+    },
+    "amount_inr": 4500,
+    "origin": "synthetic_project_authored",
+    "is_real_incident": false,
+    "source_of_pattern": "S05",
+    "split": "held_out_boundary",
+    "expected_category_status": "provisional",
+    "expected_action_ids": [
+      "A01",
+      "A02",
+      "A03",
+      "A04",
+      "A05",
+      "A08",
+      "A06",
+      "A07",
+      "A09"
+    ],
+    "expectation_method": "hand_specified_against_routing_contract",
+    "review_status": "human_review_pending",
+    "forbidden_conclusions": [
+      "guaranteed_refund",
+      "proven_fraud",
+      "account_frozen_by_app",
+      "report_submitted_by_app"
+    ],
+    "completion_truth": "self_reported_only"
+  },
+  {
+    "case_id": "T055",
+    "category_id": "C10",
+    "variant": "giftcard",
+    "narrative": "A supposed recovery agent took gift-card codes as an advance fee.",
+    "facts": {
+      "country": "IN",
+      "suspected_fraud": "yes",
+      "money_moved": "yes",
+      "payment_channel": "gift_card",
+      "credentials_exposed": "no",
+      "remote_access": "no",
+      "bank_reported": "no",
+      "official_reported": "no"
+    },
+    "amount_inr": 2000,
+    "origin": "synthetic_project_authored",
+    "is_real_incident": false,
+    "source_of_pattern": "S03",
+    "split": "held_out_boundary",
+    "expected_category_status": "provisional",
+    "expected_action_ids": [
+      "A02",
+      "A03",
+      "A08",
+      "A06",
+      "A07",
+      "A09"
+    ],
+    "expectation_method": "hand_specified_against_routing_contract",
+    "review_status": "human_review_pending",
+    "forbidden_conclusions": [
+      "guaranteed_refund",
+      "proven_fraud",
+      "account_frozen_by_app",
+      "report_submitted_by_app"
+    ],
+    "completion_truth": "self_reported_only"
+  },
+  {
+    "case_id": "T056",
+    "category_id": "C13",
+    "variant": "unknown_payment",
+    "narrative": "An unfamiliar debit alert may be genuine; I suspect fraud but cannot confirm the rail or amount yet.",
+    "facts": {
+      "country": "IN",
+      "suspected_fraud": "yes",
+      "money_moved": "unknown",
+      "payment_channel": "unknown",
+      "credentials_exposed": "no",
+      "remote_access": "no",
+      "bank_reported": "no",
+      "official_reported": "no"
+    },
+    "amount_inr": null,
+    "origin": "synthetic_project_authored",
+    "is_real_incident": false,
+    "source_of_pattern": "S02",
+    "split": "held_out_boundary",
+    "expected_category_status": "provisional",
+    "expected_action_ids": [
+      "A01",
+      "A02",
+      "A03",
+      "A06",
+      "A07",
+      "A10"
+    ],
+    "expectation_method": "hand_specified_against_routing_contract",
+    "review_status": "human_review_pending",
+    "forbidden_conclusions": [
+      "guaranteed_refund",
+      "proven_fraud",
+      "account_frozen_by_app",
+      "report_submitted_by_app"
+    ],
+    "completion_truth": "self_reported_only"
+  }
+]

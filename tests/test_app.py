@@ -58,11 +58,11 @@ class Acceptance(unittest.TestCase):
         payload = case(remote_access='yes');payload['completed']={'A06':token}
         self.assertIn('A06', assess(payload)['completed'])
 
-    def test_completion_dropped_for_changed_context(self):
+    def test_completion_preserved_when_irrelevant_payment_rail_changes(self):
         first = assess(case())
         token = next(a['completion_token'] for a in first['actions'] if a['action_id']=='A01')
         payload=case(payment_channel='card');payload['completed']={'A01':token}
-        self.assertEqual({}, assess(payload)['completed'])
+        self.assertIn('A01', assess(payload)['completed'])
 
     def test_removed_step_dropped(self):
         first=assess(case());payload=case(suspected_fraud='no')

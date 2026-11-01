@@ -19,7 +19,7 @@ class CandidateAcceptance(unittest.TestCase):
         self.assertNotIn('reset an OTP',text)
         exported=summary(r)
         self.assertIn('https://cyber.delhipolice.gov.in/vishing.html',exported)
-        self.assertIn('https://consumer.ftc.gov/',exported)
+        self.assertNotIn('https://consumer.ftc.gov/',exported)
 
     def test_unknown_and_non_india_scope(self):
         r=assess({'facts':{**BASE,'suspected_fraud':'unknown'}})

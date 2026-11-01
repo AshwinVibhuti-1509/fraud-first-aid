@@ -1,61 +1,14 @@
-# Fraud First Aid — GitHub and Render Deployment
+# Deployment checklist — Fraud First Aid 2.1 review
 
-## What this is
+**Do not use this review candidate for real financial-incident data without expert guidance, privacy, security and operational reviews.** No deployment or Git push was done during this release.
 
-A student prototype for post-incident financial-fraud response, built for the DECAcode 2026 hackathon by Wall Street Wolves. It is **not** a bank, government service, financial regulator, fraud-detection system, or complaint-submission service. Guidance is provisional and linked to external sources. **No reimbursement or recovery is guaranteed.** Use only fictional test inputs during hackathon demonstrations; do not enter PINs, passwords, OTPs, full account numbers, or actual confidential incident files. The app has no login or incident database; downloaded summaries persist on the user's device.
+1. Test in Windows Command Prompt using `README.md` instructions.
+2. Run `python self_check.py` and check all failures/skips. Test `/`, `/classic`, `/api/health` and all guided routes.
+3. Confirm `data/questions.json`, `data/actions.json`, `data/routing_rules.json`, `data/sources.json` are nested under `data/` when committing to GitHub. Do not flatten folders.
+4. Render: Python web service; build `pip install -r requirements.txt`; start `gunicorn --bind 0.0.0.0:$PORT app:app` (Gunicorn is for Linux deployment, not local Windows).
+5. Real AI vision stays OFF until a server-side key/provider security review is complete. Tesseract is NOT preinstalled by the pip requirements; verify availability or keep local OCR disabled. No AI provider is necessary for manual intake.
+6. Verify `GET /api/health`, the homepage, `/api/intake/options`, description suggestions, manual category flow, 1930 and bank resources, full report and `.ics` download. Reproduce changes from seven to eight actions and preserved A06 on the unmodified UPI example.
+7. Source links and bank numbers must be checked on current official pages before going live. Note cold starts and third-party hosting log policies; do not claim no server processing.
+8. Independently assess security controls including upload throttling, logging, CSP and abuse prevention. Prototype throttle is per-process, not a production-grade distributed system.
 
-## Source code: GitHub
-
-## Fastest upload to your existing GitHub repository
-
-Repository: **https://github.com/AshwinVibhuti-1509/fraud-first-aid**
-
-1. Extract the **ZIP** and open the extracted folder (the one containing `app.py`).
-2. In the repository website, choose **Add file → Upload files** (for an empty repository use **uploading an existing file**).
-3. Drag the **files and folders INSIDE** the extracted folder into the upload area. Do **not** upload the ZIP itself and do **not** nest everything in an extra `fraud-first-aid/` directory.
-4. Confirm `app.py`, `engine.py`, `requirements.txt`, `render.yaml`, `Procfile`, `static/`, `data/`, `tests/`, and `docs/` appear at repository root; commit to `main`.
-5. Render: **New → Web Service**, connect the repo, Python runtime, root blank, build `pip install -r requirements.txt`, start `gunicorn --bind 0.0.0.0:$PORT app:app`.
-6. Verify the Render `/api/health` URL and walk through assessment, 7→8 actions, export, bank/Maps links and reset.
-
-Never upload `.venv/`, `.git/`, any `.env` file, actual incident records, or downloaded incident summaries.
-
-
-Create a repository called `fraud-first-aid` on GitHub and upload **the files inside this folder** to the repository root, or use Git:
-
-```bash
-git init
-git add .
-git commit -m "DECAcode 2026: Fraud First Aid demo"
-git branch -M main
-git remote add origin https://github.com/AshwinVibhuti-1509/fraud-first-aid.git
-git push -u origin main
-```
-
-If using GitHub's browser upload, extract this ZIP, open the extracted folder containing `app.py` and drag **all contained files and subfolders**, not the ZIP itself, into `Add file` > `Upload files`. In particular `app.py`, `engine.py`, `requirements.txt`, `static/`, `data/` must all be at the repository root.
-
-### Disclosure
-
-The pre-event stable v0.1.1 prototype and dataset preparation predate the hackathon, with organizer permission as reported by the team. Event-day modifications are credited in `README.md` and `docs/`. AI assistance and third-party official guidance sources are acknowledged there.
-
-## Publish: Render Web Service (Flask, not Static Site)
-
-1. Open Render, sign in, `New` > `Web Service`.
-2. Connect GitHub and select the repository.
-3. Configure:
-   - Language/runtime: **Python 3**
-   - Root Directory: empty / repository root
-   - Build Command: `pip install -r requirements.txt`
-   - Start Command: `gunicorn --bind 0.0.0.0:$PORT app:app`
-   - Plan: **Free** if offered. Check plan details before confirming any charges.
-4. Create/deploy the service and inspect logs. After deployment, visit `https://YOUR-SERVICE.onrender.com/api/health` then the homepage.
-5. Complete the 7->8-action fictional UPI demo, download, bank links, Maps links and reset on the PUBLIC URL before declaring it released.
-
-The `render.yaml` Blueprint expresses the same configuration, but manual Web Service creation avoids unexpected plan/Blueprint UI issues. Keep automated deploys disabled during judging if necessary to avoid changes to the live build.
-
-### Important caveats
-
-- Free Render instances can spin down when inactive and take time to wake. Open the live site shortly before judging and keep the local Windows Flask demo as fallback.
-- A public URL is not proof of professional security or regulatory vetting. Prototype only.
-- Ordinary external bank links and Google Maps searches require internet access. Local checklist and exports don't need third-party APIs.
-- You can use `python app.py` locally (Flask development server). Gunicorn is used **only** for the web deployment.
-- Never commit real victim information, transcripts, passwords, `.env` files or downloaded incident summaries.
+**If the deployed app fails:** use the preserved earlier release; no forced migrations or destructive database steps are required because this version has no incident database.

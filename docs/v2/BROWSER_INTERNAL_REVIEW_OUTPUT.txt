@@ -1,0 +1,18 @@
+HOME Fraud First Aid · Your first response companion True
+PROPOSALS Potential amount: ₹4500.00 · apply only if correct
+How was the payment made? → UPI
+Has money actually left your account or possession? → Yes
+COUNT 7
+COUNT 2 8 PRESERVED True
+BANK State Bank of India
+
+Dedicated unauthorised-transaction reporting line.
+
+☎ 1800 1111 09
+Verify on official ban
+REPORT True
+RESET True
+MOBILE OVERFLOW False
+CONSENT_REQUIRED Review your preview and explicitly agree to the selected processing method.
+OCR_PROPOSALS Potential amount: ₹4500.00 · apply only if correct / How was the payment made? → UPI
+JS_ERRORS []

@@ -3,9 +3,24 @@ import os
 from flask import Flask, jsonify, request, send_from_directory, Response
 from werkzeug.exceptions import BadRequest, RequestEntityTooLarge
 from engine import QUESTIONS, VERSION, InputError, assess, summary
+from intake import interpret, KINDS
+from evidence import modes, sanitized_png, analyze, EvidenceError
+import time
+from collections import deque
 
 app = Flask(__name__, static_folder='static', static_url_path='/static')
 app.config['MAX_CONTENT_LENGTH'] = 16 * 1024
+# Per-request boundary. The image-only endpoint has its own upper bound.
+@app.before_request
+def limits():
+    if request.path == '/api/evidence/analyze':
+        request.max_content_length = 3 * 1024 * 1024
+    else:
+        request.max_content_length = 16 * 1024
+
+# In-process request-cost limit. Does not persist addresses or case contents.
+_image_attempts = deque()
+
 
 @app.after_request
 def headers(response):
@@ -17,6 +32,10 @@ def headers(response):
 
 @app.get('/')
 def index():
+    return send_from_directory(app.static_folder, 'guided.html')
+
+@app.get('/classic')
+def classic():
     return send_from_directory(app.static_folder, 'index.html')
 
 @app.get('/api/health')
@@ -31,6 +50,35 @@ def payload():
     if not request.is_json:
         raise InputError('Use application/json.')
     return request.get_json()
+
+@app.get('/api/intake/options')
+def intake_options():
+    return jsonify(categories=KINDS, image=modes())
+
+@app.post('/api/intake/interpret')
+def interpret_description():
+    data=payload()
+    if not isinstance(data,dict) or set(data)-{'description','category'}:
+        raise InputError('Unsupported intake request.')
+    try:
+        return jsonify(interpret(data.get('description',''),data.get('category','unknown')))
+    except ValueError as err: raise InputError(str(err)) from err
+
+@app.post('/api/evidence/analyze')
+def image_analysis():
+    data=payload()
+    if not isinstance(data,dict) or set(data)-{'image','mode','consent','sanitized_preview_confirmed'}:
+        raise InputError('Unsupported evidence request.')
+    if data.get('consent') is not True or data.get('sanitized_preview_confirmed') is not True:
+        raise InputError('Explicit consent and image-preview confirmation are required.')
+    now=time.monotonic()
+    while _image_attempts and _image_attempts[0]<now-60: _image_attempts.popleft()
+    if len(_image_attempts)>=12: return jsonify(error='Image analysis is temporarily limited; try manual intake.'),429
+    _image_attempts.append(now)
+    try:
+        png=sanitized_png(data.get('image'))
+        return jsonify(analyze(png,data.get('mode')))
+    except EvidenceError as err: raise InputError(str(err)) from err
 
 @app.post('/api/assess')
 def assessment():

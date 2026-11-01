@@ -9,27 +9,38 @@
           "value": "IN"
         },
         {
-          "field": "suspected_fraud",
-          "op": "eq",
-          "value": "yes"
-        },
-        {
-          "field": "money_moved",
-          "op": "in",
-          "value": [
-            "yes",
-            "unknown"
-          ]
-        },
-        {
-          "field": "payment_channel",
-          "op": "in",
-          "value": [
-            "bank_transfer",
-            "upi",
-            "card",
-            "wallet",
-            "unknown"
+          "any": [
+            {
+              "all": [
+                {
+                  "field": "suspected_fraud",
+                  "op": "eq",
+                  "value": "yes"
+                },
+                {
+                  "field": "money_moved",
+                  "op": "in",
+                  "value": [
+                    "yes",
+                    "unknown"
+                  ]
+                }
+              ]
+            },
+            {
+              "all": [
+                {
+                  "field": "suspected_fraud",
+                  "op": "eq",
+                  "value": "unknown"
+                },
+                {
+                  "field": "money_moved",
+                  "op": "eq",
+                  "value": "yes"
+                }
+              ]
+            }
           ]
         },
         {
@@ -44,7 +55,7 @@
     },
     "action_id": "A01",
     "priority": 10,
-    "rationale": "Bank contact remains urgent when payment details are incomplete.",
+    "rationale": "Suspected or uncertain fraud involving possible debit warrants prompt verification with the bank; this does not determine liability.",
     "origin": "project_designed_routing",
     "review_status": "team_review_pending"
   },
@@ -58,9 +69,27 @@
           "value": "IN"
         },
         {
-          "field": "suspected_fraud",
-          "op": "eq",
-          "value": "yes"
+          "any": [
+            {
+              "field": "suspected_fraud",
+              "op": "eq",
+              "value": "yes"
+            },
+            {
+              "all": [
+                {
+                  "field": "suspected_fraud",
+                  "op": "eq",
+                  "value": "unknown"
+                },
+                {
+                  "field": "money_moved",
+                  "op": "eq",
+                  "value": "yes"
+                }
+              ]
+            }
+          ]
         },
         {
           "field": "official_reported",
@@ -74,7 +103,7 @@
     },
     "action_id": "A02",
     "priority": 10,
-    "rationale": "Official channels remain visible before classification finishes.",
+    "rationale": "Official financial cyberfraud reporting should be readily available for a suspicious or uncertain debit; not a finding of fraud.",
     "origin": "project_designed_routing",
     "review_status": "team_review_pending"
   },

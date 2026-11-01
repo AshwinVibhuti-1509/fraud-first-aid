@@ -1,0 +1,112 @@
+TAP version 13
+# Subtest: an export failure arriving after reset cannot resurrect an error
+ok 1 - an export failure arriving after reset cannot resurrect an error
+  ---
+  duration_ms: 9.973526
+  type: 'test'
+  ...
+# Subtest: invalid assessment clears a previous network error
+ok 2 - invalid assessment clears a previous network error
+  ---
+  duration_ms: 3.66423
+  type: 'test'
+  ...
+# Subtest: answer change during first request starts a newer assessment
+ok 3 - answer change during first request starts a newer assessment
+  ---
+  duration_ms: 1.837749
+  type: 'test'
+  ...
+# Subtest: late older response cannot replace the latest assessment
+ok 4 - late older response cannot replace the latest assessment
+  ---
+  duration_ms: 1.492668
+  type: 'test'
+  ...
+# Subtest: reset during a request prevents old results returning
+ok 5 - reset during a request prevents old results returning
+  ---
+  duration_ms: 2.618123
+  type: 'test'
+  ...
+# Subtest: network failure retains answers and hides obsolete results
+ok 6 - network failure retains answers and hides obsolete results
+  ---
+  duration_ms: 1.618555
+  type: 'test'
+  ...
+# Subtest: invalid form blocks requests and disables summary export
+ok 7 - invalid form blocks requests and disables summary export
+  ---
+  duration_ms: 1.381894
+  type: 'test'
+  ...
+# Subtest: country selection immediately hides India urgent reporting strip
+ok 8 - country selection immediately hides India urgent reporting strip
+  ---
+  duration_ms: 1.191603
+  type: 'test'
+  ...
+# Subtest: completion is sent to export and a download is requested
+ok 9 - completion is sent to export and a download is requested
+  ---
+  duration_ms: 2.555591
+  type: 'test'
+  ...
+# Subtest: initial screen shows only form, not the results panel; success reveals results
+ok 10 - initial screen shows only form, not the results panel; success reveals results
+  ---
+  duration_ms: 5.321243
+  type: 'test'
+  ...
+# Subtest: Edit answers and Clear session return the user to the form view
+ok 11 - Edit answers and Clear session return the user to the form view
+  ---
+  duration_ms: 2.015872
+  type: 'test'
+  ...
+# Subtest: core workflow present and no broken option markup
+ok 12 - core workflow present and no broken option markup
+  ---
+  duration_ms: 1.254887
+  type: 'test'
+  ...
+# Subtest: reporting is first-screen and official
+ok 13 - reporting is first-screen and official
+  ---
+  duration_ms: 0.160478
+  type: 'test'
+  ...
+# Subtest: no silent persistence or unsafe HTML injection in guided controller
+ok 14 - no silent persistence or unsafe HTML injection in guided controller
+  ---
+  duration_ms: 0.332091
+  type: 'test'
+  ...
+# Subtest: privacy gates before image analysis
+ok 15 - privacy gates before image analysis
+  ---
+  duration_ms: 0.178204
+  type: 'test'
+  ...
+# Subtest: Maps encodes locality and never includes incident notes
+ok 16 - Maps encodes locality and never includes incident notes
+  ---
+  duration_ms: 6.570479
+  type: 'test'
+  ...
+# Subtest: Another country hides India contacts and blocks Maps; reset restores and clears locality
+ok 17 - Another country hides India contacts and blocks Maps; reset restores and clears locality
+  ---
+  duration_ms: 2.343116
+  type: 'test'
+  ...
+1..17
+# tests 17
+# suites 0
+# pass 17
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 102.634107

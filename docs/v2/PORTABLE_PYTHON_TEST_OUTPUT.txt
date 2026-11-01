@@ -1,0 +1,27 @@
+test_all_base_states_have_unique_ids (tests.test_release_core.CoreRegression.test_all_base_states_have_unique_ids) ... ok
+test_all_unknown_no_unjustified_bank_referral (tests.test_release_core.CoreRegression.test_all_unknown_no_unjustified_bank_referral) ... ok
+test_amount (tests.test_release_core.CoreRegression.test_amount) ... ok
+test_coercion_does_not_offer_routine_payment_route (tests.test_release_core.CoreRegression.test_coercion_does_not_offer_routine_payment_route) ... ok
+test_coercion_override (tests.test_release_core.CoreRegression.test_coercion_override) ... ok
+test_completion_stable (tests.test_release_core.CoreRegression.test_completion_stable) ... ok
+test_context_validation (tests.test_release_core.CoreRegression.test_context_validation) ... ok
+test_followup (tests.test_release_core.CoreRegression.test_followup) ... ok
+test_routine_is_not_called_fraud (tests.test_release_core.CoreRegression.test_routine_is_not_called_fraud) ... ok
+test_sim_context (tests.test_release_core.CoreRegression.test_sim_context) ... ok
+test_sim_not_misclassified_as_ordinary_pending_payment (tests.test_release_core.CoreRegression.test_sim_not_misclassified_as_ordinary_pending_payment) ... ok
+test_text_negation (tests.test_release_core.CoreRegression.test_text_negation) ... ok
+test_unauthorized_source_not_refund_promise (tests.test_release_core.CoreRegression.test_unauthorized_source_not_refund_promise) ... ok
+test_unicode_visible_and_injection_encodable (tests.test_release_core.CoreRegression.test_unicode_visible_and_injection_encodable) ... ok
+test_unknown_fraud_moved_money_gets_bank_and_portal (tests.test_release_core.CoreRegression.test_unknown_fraud_moved_money_gets_bank_and_portal) ... ok
+test_unrecognized_transaction_not_routine_even_if_suspicion_no (tests.test_release_core.CoreRegression.test_unrecognized_transaction_not_routine_even_if_suspicion_no) ... ok
+test_corrupt_image_rejected (tests.test_evidence.EvidenceSafety.test_corrupt_image_rejected) ... ok
+test_forged_signature_rejected (tests.test_evidence.EvidenceSafety.test_forged_signature_rejected) ... ok
+test_mode_flags_shape (tests.test_evidence.EvidenceSafety.test_mode_flags_shape) ... ok
+test_oversized_payload_rejected (tests.test_evidence.EvidenceSafety.test_oversized_payload_rejected) ... ok
+test_valid_flattened_image (tests.test_evidence.EvidenceSafety.test_valid_flattened_image) ... ok
+test_wrong_mime_rejected (tests.test_evidence.EvidenceSafety.test_wrong_mime_rejected) ... ok
+
+----------------------------------------------------------------------
+Ran 22 tests in 0.483s
+
+OK

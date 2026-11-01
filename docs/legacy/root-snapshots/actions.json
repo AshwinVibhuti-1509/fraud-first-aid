@@ -1,0 +1,134 @@
+[
+  {
+    "action_id": "A01",
+    "title": "Contact your bank",
+    "action_text": "Report the suspected fraudulent transaction to your bank promptly through its genuine app or official contact details, and obtain an acknowledgement. Explain whether you made the payment yourself. This prototype does not determine refund eligibility or liability, including for payments authorised after deception.",
+    "origin": "official_plus_workflow_design",
+    "source_id": "S02",
+    "jurisdiction": "IN",
+    "review_status": "source_paraphrase_team_review_pending",
+    "checked_on": "2026-10-28",
+    "refund_guarantee": false
+  },
+  {
+    "action_id": "A02",
+    "title": "Use official financial-fraud reporting",
+    "action_text": "For suspected financial cyberfraud in India, call 1930 or use cybercrime.gov.in. Do not wait for this questionnaire to finish.",
+    "origin": "official_india_paraphrase",
+    "source_id": "S01",
+    "jurisdiction": "IN",
+    "review_status": "source_paraphrase_team_review_pending",
+    "checked_on": "2026-10-27",
+    "refund_guarantee": false
+  },
+  {
+    "action_id": "A03",
+    "title": "Pause further payments",
+    "action_text": "Stop sending additional money when you suspect a scam.",
+    "origin": "general_protection_adaptation",
+    "source_id": "S04",
+    "jurisdiction": "IN",
+    "review_status": "adaptation_team_review_pending",
+    "checked_on": "2026-10-27",
+    "refund_guarantee": false
+  },
+  {
+    "action_id": "A04",
+    "title": "Secure exposed account credentials",
+    "action_text": "For an exposed password, use the account provider’s genuine recovery process; replace exposed or reused passwords and enable two-factor authentication where available. If banking account credentials, a banking PIN or an OTP were exposed, promptly contact the affected bank or payment provider through its genuine app or official website, even if no financial loss is yet known. Ask how to secure the affected access. This banking step applies only if banking or payment access was involved. Banking-contact reference: https://cyber.delhipolice.gov.in/vishing.html",
+    "origin": "general_security_adaptation",
+    "source_id": "S05",
+    "jurisdiction": "IN",
+    "review_status": "adaptation_team_review_pending",
+    "checked_on": "2026-10-28",
+    "refund_guarantee": false
+  },
+  {
+    "action_id": "A05",
+    "title": "Get trusted device-security help",
+    "action_text": "For suspected remote access, seek help from the device manufacturer or a trusted support provider; update security software and check for unwanted software. Secure accounts from a trusted device.",
+    "origin": "general_security_adaptation",
+    "source_id": "S05",
+    "jurisdiction": "IN",
+    "review_status": "adaptation_team_review_pending",
+    "checked_on": "2026-10-27",
+    "refund_guarantee": false
+  },
+  {
+    "action_id": "A06",
+    "title": "Organise incident facts",
+    "action_text": "Keep a timeline, amount, payment channel, transaction reference and relevant messages available. Do not put PINs, passwords or OTPs in this app. Do not delay reporting to complete this list.",
+    "origin": "project_workflow_design",
+    "source_id": null,
+    "jurisdiction": "IN",
+    "review_status": "project_proposal_team_review_pending",
+    "checked_on": "2026-10-27",
+    "refund_guarantee": false
+  },
+  {
+    "action_id": "A07",
+    "title": "Keep reporting references",
+    "action_text": "Record the bank acknowledgement and any complaint reference actually received. Mark completion only after you have performed the action.",
+    "origin": "official_plus_workflow_design",
+    "source_id": "S02",
+    "jurisdiction": "IN",
+    "review_status": "source_paraphrase_team_review_pending",
+    "checked_on": "2026-10-27",
+    "refund_guarantee": false
+  },
+  {
+    "action_id": "A08",
+    "title": "Contact the payment provider",
+    "action_text": "If a payment app, exchange or gift-card provider was involved, contact that provider through its genuine support channel and ask what reporting or recovery options exist. Recovery is not assured.",
+    "origin": "foreign_guidance_india_adaptation",
+    "source_id": "S05",
+    "jurisdiction": "IN",
+    "review_status": "adaptation_team_review_pending",
+    "checked_on": "2026-10-27",
+    "refund_guarantee": false
+  },
+  {
+    "action_id": "A09",
+    "title": "Watch for recovery-fee approaches",
+    "action_text": "Be cautious of a new contact offering to recover lost money for an upfront payment.",
+    "origin": "general_protection_adaptation",
+    "source_id": "S04",
+    "jurisdiction": "IN",
+    "review_status": "adaptation_team_review_pending",
+    "checked_on": "2026-10-27",
+    "refund_guarantee": false
+  },
+  {
+    "action_id": "A10",
+    "title": "Clarify what happened",
+    "action_text": "Keep uncertain answers as unknown. Confirm which payment channel was involved and whether account access was exposed. If you discover a debit you do not recognise, promptly contact your bank through its genuine app or official contact details to verify it; do not wait to complete this form. A pending payment alone does not establish fraud.",
+    "origin": "official_plus_workflow_design",
+    "source_id": "S02",
+    "jurisdiction": "IN",
+    "review_status": "project_proposal_team_review_pending",
+    "checked_on": "2026-10-28",
+    "refund_guarantee": false
+  },
+  {
+    "action_id": "A11",
+    "title": "Check the ordinary payment-support route",
+    "action_text": "A pending payment or delayed delivery alone does not prove fraud. Check the transaction status and contact the genuine payment provider or merchant; reassess if scam indicators appear.",
+    "origin": "project_workflow_design",
+    "source_id": null,
+    "jurisdiction": "IN",
+    "review_status": "project_proposal_team_review_pending",
+    "checked_on": "2026-10-27",
+    "refund_guarantee": false
+  },
+  {
+    "action_id": "A12",
+    "title": "Use guidance for your country",
+    "action_text": "This prototype’s reporting workflow covers India. For another country, consult its official reporting channel and your financial provider; Indian procedures are not applied automatically.",
+    "origin": "project_scope_guard",
+    "source_id": null,
+    "jurisdiction": "OTHER",
+    "review_status": "project_proposal_team_review_pending",
+    "checked_on": "2026-10-27",
+    "refund_guarantee": false
+  }
+]

@@ -1,0 +1,96 @@
+Fraud First Aid 0.1.2-rc1 — local implementation checks
+test_blank_and_zero_amount_distinct (test_app.Acceptance.test_blank_and_zero_amount_distinct) ... ok
+test_completion_dropped_for_changed_context (test_app.Acceptance.test_completion_dropped_for_changed_context) ... ok
+test_completion_preserved_for_unchanged_step (test_app.Acceptance.test_completion_preserved_for_unchanged_step) ... ok
+test_contradiction_visible_not_silently_fixed (test_app.Acceptance.test_contradiction_visible_not_silently_fixed) ... ok
+test_credentials_without_loss (test_app.Acceptance.test_credentials_without_loss) ... ok
+test_deceived_payment (test_app.Acceptance.test_deceived_payment) ... ok
+test_invalid_amounts (test_app.Acceptance.test_invalid_amounts) ... ok
+test_known_report_is_not_repeated (test_app.Acceptance.test_known_report_is_not_repeated) ... ok
+test_other_country (test_app.Acceptance.test_other_country) ... ok
+test_overlapping_device_and_account_exposure (test_app.Acceptance.test_overlapping_device_and_account_exposure) ... ok
+test_removed_step_dropped (test_app.Acceptance.test_removed_step_dropped) ... ok
+test_routine_payment_not_assumed_fraud (test_app.Acceptance.test_routine_payment_not_assumed_fraud) ... ok
+test_summary_truthful_and_current (test_app.Acceptance.test_summary_truthful_and_current) ... ok
+test_unknown_does_not_invent_a_verdict (test_app.Acceptance.test_unknown_does_not_invent_a_verdict) ... ok
+test_full_api_and_export (test_app.Integration.test_full_api_and_export) ... ok
+test_no_state_leaks_between_requests (test_app.Integration.test_no_state_leaks_between_requests) ... ok
+test_page_assets_and_questions (test_app.Integration.test_page_assets_and_questions) ... ok
+test_validation (test_app.Integration.test_validation) ... ok
+test_exact_demo_and_export (test_candidate.CandidateAcceptance.test_exact_demo_and_export) ... ok
+test_exposure_without_loss_keeps_conditional_banking_guidance (test_candidate.CandidateAcceptance.test_exposure_without_loss_keeps_conditional_banking_guidance) ... ok
+test_human_review_labels_remain_pending (test_candidate.CandidateAcceptance.test_human_review_labels_remain_pending) ... ok
+test_unknown_and_non_india_scope (test_candidate.CandidateAcceptance.test_unknown_and_non_india_scope) ... ok
+test_multiline_fields_cannot_forge_status_lines (test_export_integrity.ExportIntegrity.test_multiline_fields_cannot_forge_status_lines) ... ok
+test_quotes_backslashes_and_unicode_round_trip (test_export_integrity.ExportIntegrity.test_quotes_backslashes_and_unicode_round_trip) ... ok
+test_summary_endpoint_and_true_completion_remain_correct (test_export_integrity.ExportIntegrity.test_summary_endpoint_and_true_completion_remain_correct) ... ok
+test_home_and_classic_are_separate (test_guided_v2.GuidedV2Boundary.test_home_and_classic_are_separate) ... /workspace/scratch/0ef7169fda81/ffa-v2-work/tests/test_guided_v2.py:11: ResourceWarning: unclosed file <_io.BufferedReader name='/workspace/scratch/0ef7169fda81/ffa-v2-work/static/guided.html'>
+  self.assertIn('Guided first response',c.get('/').text)
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/workspace/scratch/0ef7169fda81/ffa-v2-work/tests/test_guided_v2.py:12: ResourceWarning: unclosed file <_io.BufferedReader name='/workspace/scratch/0ef7169fda81/ffa-v2-work/static/index.html'>
+  self.assertIn('id="incident-form"',c.get('/classic').text)
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/workspace/scratch/0ef7169fda81/ffa-v2-work/tests/test_guided_v2.py:13: ResourceWarning: unclosed file <_io.BufferedReader name='/workspace/scratch/0ef7169fda81/ffa-v2-work/static/guided.html'>
+  self.assertNotIn('/static/app.js',c.get('/').text)
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/workspace/scratch/0ef7169fda81/ffa-v2-work/tests/test_guided_v2.py:15: ResourceWarning: unclosed file <_io.BufferedReader name='/workspace/scratch/0ef7169fda81/ffa-v2-work/static/guided.js'>
+  self.assertEqual(c.get(p).status_code,200)
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/workspace/scratch/0ef7169fda81/ffa-v2-work/tests/test_guided_v2.py:15: ResourceWarning: unclosed file <_io.BufferedReader name='/workspace/scratch/0ef7169fda81/ffa-v2-work/static/guided.css'>
+  self.assertEqual(c.get(p).status_code,200)
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/workspace/scratch/0ef7169fda81/ffa-v2-work/tests/test_guided_v2.py:15: ResourceWarning: unclosed file <_io.BufferedReader name='/workspace/scratch/0ef7169fda81/ffa-v2-work/static/fictional-evidence.svg'>
+  self.assertEqual(c.get(p).status_code,200)
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+ok
+test_no_persistence_or_provider_in_ui (test_guided_v2.GuidedV2Boundary.test_no_persistence_or_provider_in_ui) ... ok
+test_real_upload_and_ai_routes_absent (test_guided_v2.GuidedV2Boundary.test_real_upload_and_ai_routes_absent) ... /workspace/scratch/0ef7169fda81/ffa-v2-work/tests/test_guided_v2.py:18: ResourceWarning: unclosed file <_io.BufferedReader name='/workspace/scratch/0ef7169fda81/ffa-v2-work/static/guided.html'>
+  c=app.test_client();html=c.get('/').text
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+ok
+test_request_size_boundary_remains (test_guided_v2.GuidedV2Boundary.test_request_size_boundary_remains) ... ok
+test_resource_structure_and_verified_directory (test_resources.ResourceAcceptance.test_resource_structure_and_verified_directory) ... ok
+test_seven_to_eight_actions_and_export (test_resources.ResourceAcceptance.test_seven_to_eight_actions_and_export) ... ok
+test_examples_load_once_after_app (test_script_loading.ScriptLoadingTests.test_examples_load_once_after_app) ... ok
+
+----------------------------------------------------------------------
+Ran 32 tests in 0.099s
+
+OK
+{"database_scenarios": 56, "mismatches": []}
+✔ an export failure arriving after reset cannot resurrect an error (17.194732ms)
+✔ invalid assessment clears a previous network error (3.62918ms)
+✔ answer change during first request starts a newer assessment (2.863849ms)
+✔ late older response cannot replace the latest assessment (2.268971ms)
+✔ reset during a request prevents old results returning (4.477776ms)
+✔ network failure retains answers and hides obsolete results (3.29492ms)
+✔ invalid form blocks requests and disables summary export (1.762044ms)
+✔ country selection immediately hides India urgent reporting strip (2.669957ms)
+✔ completion is sent to export and a download is requested (5.130239ms)
+✔ initial screen shows only form, not the results panel; success reveals results (9.445341ms)
+✔ Edit answers and Clear session return the user to the form view (7.11502ms)
+✔ Maps encodes locality and never includes incident notes (9.633682ms)
+✔ Another country hides India contacts and blocks Maps; reset restores and clears locality (5.070393ms)
+ℹ tests 13
+ℹ suites 0
+ℹ pass 13
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 218.980837
+Completed available checks. Browser walkthrough and human guidance review are separate gates.
+✔ three entries exist; screenshot proposals are explicit and never sent automatically (152.203202ms)
+✔ description stays local until review and optional-detail opt-in (56.988991ms)
+✔ OTHER immediately hides India contacts and reset restores them (26.767606ms)
+✔ reset invalidates stale plan and export responses and clears sensitive fields (46.939089ms)
+✔ network errors preserve answers and permit retry; text cannot inject HTML (34.672909ms)
+✔ completion tokens are forwarded unchanged when editing and reassessing (40.704525ms)
+ℹ tests 6
+ℹ suites 0
+ℹ pass 6
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 914.432823

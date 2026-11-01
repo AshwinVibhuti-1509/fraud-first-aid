@@ -115,5 +115,45 @@
     "access": "Public HTML read",
     "reuse_note": "Original conditional paraphrase; no refund or legal-entitlement claim",
     "retrieved_on": "2026-10-28"
+  },
+  {
+    "source_id": "S10",
+    "publisher": "National Cyber Crime Reporting Portal",
+    "country": "IN",
+    "title": "Immediate cybercrime reporting, 1930, official portal",
+    "url": "https://cybercrime.gov.in/",
+    "usage": "Immediate cybercrime reporting, 1930, official portal",
+    "retrieved_on": "2026-11-01",
+    "review_status": "primary_page_located; individual applicability not independently reviewed"
+  },
+  {
+    "source_id": "S11",
+    "publisher": "Department of Telecommunications / Sanchar Saathi",
+    "country": "IN",
+    "title": "Suspected fraud communications and mobile connections; not substitute for police reporting",
+    "url": "https://www.sancharsaathi.gov.in/",
+    "usage": "Suspected fraud communications and mobile connections; not substitute for police reporting",
+    "retrieved_on": "2026-11-01",
+    "review_status": "primary_page_located; individual applicability not independently reviewed"
+  },
+  {
+    "source_id": "S12",
+    "publisher": "Reserve Bank of India",
+    "country": "IN",
+    "title": "Contact bank immediately about unauthorized electronic transactions; not a refund determination",
+    "url": "https://www.rbi.org.in/commonman/english/Scripts/SMSLimitedliability.aspx",
+    "usage": "Contact bank immediately about unauthorized electronic transactions; not a refund determination",
+    "retrieved_on": "2026-11-01",
+    "review_status": "primary_page_located; individual applicability not independently reviewed"
+  },
+  {
+    "source_id": "S13",
+    "publisher": "Reserve Bank of India (2017 circular)",
+    "country": "IN",
+    "title": "Conditional bank customer liability guidance for unauthorized electronic transactions; applicability must be reviewed",
+    "url": "https://rbi.org.in/commonman/Upload/English/Notification/PDFs/NOTI1506072017.PDF",
+    "usage": "Conditional bank customer liability guidance for unauthorized electronic transactions; applicability must be reviewed",
+    "retrieved_on": "2026-11-01",
+    "review_status": "primary_page_located; individual applicability not independently reviewed"
   }
 ]

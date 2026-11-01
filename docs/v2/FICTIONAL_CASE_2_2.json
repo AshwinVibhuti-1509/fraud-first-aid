@@ -1,0 +1,42 @@
+{
+  "schema": "fraud-first-aid-local-case-1",
+  "exportedAt": "2026-11-01T00:00:00.000Z",
+  "workspace": {
+    "w-date": "2026-10-28",
+    "w-time": "14:10",
+    "w-tx-date": "2026-10-28",
+    "w-tx-amount": "4500",
+    "w-bank": "Fictional Example Bank",
+    "w-utr": "123456789012",
+    "w-app": "",
+    "w-ack-bank": "",
+    "w-ack-police": "",
+    "w-portal-draft": "Fictional demonstration only. A student sent money through UPI after seeing a suspicious online offer. The supposed seller requested an extra payment and became unreachable. No real complaint has been submitted.",
+    "w-followup": "",
+    "w-reminder": "",
+    "cw-portal-stage": "not_checked",
+    "cw-status-text": "",
+    "cw-checked-at": "",
+    "cw-portal-issue": "none"
+  },
+  "idReady": false,
+  "bankCalled": false,
+  "reportFiled": false,
+  "timeline": [
+    {
+      "date": "2026-10-28",
+      "time": "14:10",
+      "text": "Fictional UPI payment for demonstration"
+    }
+  ],
+  "actionProgress": [],
+  "updates": [],
+  "actionNotes": [
+    {
+      "action": "transaction",
+      "when": "Fictional sample",
+      "text": "Sample only — no actual financial incident or official report."
+    }
+  ],
+  "proofs": []
+}

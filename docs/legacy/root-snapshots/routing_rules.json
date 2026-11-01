@@ -1,0 +1,327 @@
+[
+  {
+    "rule_id": "R01",
+    "condition": {
+      "all": [
+        {
+          "field": "country",
+          "op": "eq",
+          "value": "IN"
+        },
+        {
+          "field": "suspected_fraud",
+          "op": "eq",
+          "value": "yes"
+        },
+        {
+          "field": "money_moved",
+          "op": "in",
+          "value": [
+            "yes",
+            "unknown"
+          ]
+        },
+        {
+          "field": "payment_channel",
+          "op": "in",
+          "value": [
+            "bank_transfer",
+            "upi",
+            "card",
+            "wallet",
+            "unknown"
+          ]
+        },
+        {
+          "field": "bank_reported",
+          "op": "in",
+          "value": [
+            "no",
+            "unknown"
+          ]
+        }
+      ]
+    },
+    "action_id": "A01",
+    "priority": 10,
+    "rationale": "Bank contact remains urgent when payment details are incomplete.",
+    "origin": "project_designed_routing",
+    "review_status": "team_review_pending"
+  },
+  {
+    "rule_id": "R02",
+    "condition": {
+      "all": [
+        {
+          "field": "country",
+          "op": "eq",
+          "value": "IN"
+        },
+        {
+          "field": "suspected_fraud",
+          "op": "eq",
+          "value": "yes"
+        },
+        {
+          "field": "official_reported",
+          "op": "in",
+          "value": [
+            "no",
+            "unknown"
+          ]
+        }
+      ]
+    },
+    "action_id": "A02",
+    "priority": 10,
+    "rationale": "Official channels remain visible before classification finishes.",
+    "origin": "project_designed_routing",
+    "review_status": "team_review_pending"
+  },
+  {
+    "rule_id": "R03",
+    "condition": {
+      "all": [
+        {
+          "field": "country",
+          "op": "eq",
+          "value": "IN"
+        },
+        {
+          "field": "suspected_fraud",
+          "op": "eq",
+          "value": "yes"
+        }
+      ]
+    },
+    "action_id": "A03",
+    "priority": 10,
+    "rationale": "Prevent additional transfers while clarifying the incident.",
+    "origin": "project_designed_routing",
+    "review_status": "team_review_pending"
+  },
+  {
+    "rule_id": "R04",
+    "condition": {
+      "all": [
+        {
+          "field": "country",
+          "op": "eq",
+          "value": "IN"
+        },
+        {
+          "field": "credentials_exposed",
+          "op": "eq",
+          "value": "yes"
+        }
+      ]
+    },
+    "action_id": "A04",
+    "priority": 20,
+    "rationale": "Account exposure is an independent flag.",
+    "origin": "project_designed_routing",
+    "review_status": "team_review_pending"
+  },
+  {
+    "rule_id": "R05",
+    "condition": {
+      "all": [
+        {
+          "field": "country",
+          "op": "eq",
+          "value": "IN"
+        },
+        {
+          "field": "remote_access",
+          "op": "eq",
+          "value": "yes"
+        }
+      ]
+    },
+    "action_id": "A05",
+    "priority": 20,
+    "rationale": "Device exposure is an independent flag.",
+    "origin": "project_designed_routing",
+    "review_status": "team_review_pending"
+  },
+  {
+    "rule_id": "R06",
+    "condition": {
+      "field": "country",
+      "op": "eq",
+      "value": "IN"
+    },
+    "action_id": "A06",
+    "priority": 30,
+    "rationale": "Evidence organisation must not delay reporting.",
+    "origin": "project_designed_routing",
+    "review_status": "team_review_pending"
+  },
+  {
+    "rule_id": "R07",
+    "condition": {
+      "all": [
+        {
+          "field": "country",
+          "op": "eq",
+          "value": "IN"
+        },
+        {
+          "field": "suspected_fraud",
+          "op": "eq",
+          "value": "yes"
+        }
+      ]
+    },
+    "action_id": "A07",
+    "priority": 30,
+    "rationale": "Preserve acknowledgements without inventing successful reporting.",
+    "origin": "project_designed_routing",
+    "review_status": "team_review_pending"
+  },
+  {
+    "rule_id": "R08",
+    "condition": {
+      "all": [
+        {
+          "field": "country",
+          "op": "eq",
+          "value": "IN"
+        },
+        {
+          "field": "suspected_fraud",
+          "op": "eq",
+          "value": "yes"
+        },
+        {
+          "field": "money_moved",
+          "op": "eq",
+          "value": "yes"
+        },
+        {
+          "field": "payment_channel",
+          "op": "in",
+          "value": [
+            "upi",
+            "wallet",
+            "crypto",
+            "gift_card"
+          ]
+        }
+      ]
+    },
+    "action_id": "A08",
+    "priority": 20,
+    "rationale": "Provider-specific assistance is an adapted suggestion, not a guaranteed remedy.",
+    "origin": "project_designed_routing",
+    "review_status": "team_review_pending"
+  },
+  {
+    "rule_id": "R09",
+    "condition": {
+      "all": [
+        {
+          "field": "country",
+          "op": "eq",
+          "value": "IN"
+        },
+        {
+          "field": "suspected_fraud",
+          "op": "eq",
+          "value": "yes"
+        },
+        {
+          "field": "money_moved",
+          "op": "eq",
+          "value": "yes"
+        }
+      ]
+    },
+    "action_id": "A09",
+    "priority": 40,
+    "rationale": "A loss can attract another scam.",
+    "origin": "project_designed_routing",
+    "review_status": "team_review_pending"
+  },
+  {
+    "rule_id": "R10",
+    "condition": {
+      "all": [
+        {
+          "field": "country",
+          "op": "eq",
+          "value": "IN"
+        },
+        {
+          "any": [
+            {
+              "field": "suspected_fraud",
+              "op": "eq",
+              "value": "unknown"
+            },
+            {
+              "field": "money_moved",
+              "op": "eq",
+              "value": "unknown"
+            },
+            {
+              "field": "payment_channel",
+              "op": "eq",
+              "value": "unknown"
+            },
+            {
+              "field": "credentials_exposed",
+              "op": "eq",
+              "value": "unknown"
+            },
+            {
+              "field": "remote_access",
+              "op": "eq",
+              "value": "unknown"
+            }
+          ]
+        }
+      ]
+    },
+    "action_id": "A10",
+    "priority": 30,
+    "rationale": "Ask for missing facts without suppressing already applicable urgent actions.",
+    "origin": "project_designed_routing",
+    "review_status": "team_review_pending"
+  },
+  {
+    "rule_id": "R11",
+    "condition": {
+      "all": [
+        {
+          "field": "country",
+          "op": "eq",
+          "value": "IN"
+        },
+        {
+          "field": "suspected_fraud",
+          "op": "eq",
+          "value": "no"
+        }
+      ]
+    },
+    "action_id": "A11",
+    "priority": 20,
+    "rationale": "Do not automatically label a routine payment issue as fraud.",
+    "origin": "project_designed_routing",
+    "review_status": "team_review_pending"
+  },
+  {
+    "rule_id": "R12",
+    "condition": {
+      "field": "country",
+      "op": "eq",
+      "value": "OTHER"
+    },
+    "action_id": "A12",
+    "priority": 10,
+    "rationale": "Do not apply Indian reporting guidance outside supported jurisdiction.",
+    "origin": "project_designed_routing",
+    "review_status": "team_review_pending"
+  }
+]
