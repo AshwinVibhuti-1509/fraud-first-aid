@@ -172,8 +172,8 @@ def summary(result):
         lines += [key.replace('_',' ').title()+': '+value for key,value in result['context'].items()]
     d = result['details']
     lines += ['', 'Amount (INR): ' + (d['amount_inr'] if d['amount_inr'] is not None else 'Unknown / not provided'),
-              'Reference (user supplied; JSON-escaped): ' + (json.dumps(d['reference'], ensure_ascii=False) if d['reference'] else 'Not provided'),
-              'Notes (user supplied; JSON-escaped): ' + (json.dumps(d['notes'], ensure_ascii=False) if d['notes'] else 'Not provided')]
+              'Reference (user supplied; JSON-escaped): ' + (safe_json_field(d['reference']) if d['reference'] else 'Not provided'),
+              'Notes (user supplied; JSON-escaped): ' + (safe_json_field(d['notes']) if d['notes'] else 'Not provided')]
     lines += ['', 'CHECKLIST PROGRESS SINCE ASSESSMENT (SELF-REPORTED)']
     for a in result['actions']:
         lines += [('DONE — ' if a['completed'] else 'NOT MARKED DONE — ') + a['title'], a['action_text'], 'Why shown: ' + a['reason']]
