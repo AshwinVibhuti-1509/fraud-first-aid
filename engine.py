@@ -155,6 +155,12 @@ def assess(payload):
             'completed': {a['action_id']: a['completion_token'] for a in selected if a['completed']},
             'disclaimer': 'Prototype guidance, not a finding of fraud. No complaint is submitted and recovery is not guaranteed.'}
 
+def safe_json_field(value):
+    return (json.dumps(value, ensure_ascii=False)
+            .replace("\u0085", "\\u0085")
+            .replace("\u2028", "\\u2028")
+            .replace("\u2029", "\\u2029"))
+
 def summary(result):
     lines = ['FRAUD FIRST AID — PERSONAL INCIDENT SUMMARY',
              'User-provided facts; not verified by a bank, authority or this prototype.',
